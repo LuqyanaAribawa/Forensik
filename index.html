@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🎯 Prediksi UTS Forensik TI</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root {
+            --primary: #818cf8;
+            --primary-dark: #6366f1;
+            --primary-glow: rgba(129, 140, 248, 0.3);
+            --success: #34d399;
+            --success-dark: #10b981;
+            --success-glow: rgba(52, 211, 153, 0.3);
+            --danger: #f87171;
+            --danger-dark: #ef4444;
+            --danger-glow: rgba(248, 113, 113, 0.3);
+            --warning: #fbbf24;
+            --bg-dark: #0a0a0f;
+            --bg-card: rgba(255, 255, 255, 0.03);
+            --bg-card-solid: #12121a;
+            --bg-input: rgba(255, 255, 255, 0.05);
+            --bg-hover: rgba(255, 255, 255, 0.08);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-light: rgba(255, 255, 255, 0.12);
+        }
+
+        html, body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse 80% 50% at 50% -20%, rgba(99, 102, 241, 0.15), transparent),
+                radial-gradient(ellipse 60% 40% at 100% 100%, rgba(139, 92, 246, 0.1), transparent);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .settings-page {
+            min-height: 100vh;
+            padding: 24px 20px;
+            padding-bottom: 40px;
+        }
+
+        .settings-header {
+            text-align: center;
+            padding: 40px 0 32px;
+        }
+
+        .logo-icon {
+            width: 72px;
+            height: 72px;
+            background: linear-gradient(135deg, var(--primary), #a78bfa);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            margin: 0 auto 20px;
+            box-shadow: 0 8px 32px var(--primary-glow);
+        }
+
+        .settings-header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #fff 0%, #c7d2fe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .settings-header p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .settings-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .settings-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .setting-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .setting-item:first-of-type {
+            padding-top: 0;
+        }
+
+        .setting-label {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .setting-label span {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        .number-input {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: var(--bg-input);
+            border-radius: 14px;
+            padding: 6px;
+        }
+
+        .number-input button {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            border: none;
+            background: var(--bg-hover);
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .number-input button:active {
+            transform: scale(0.92);
+            background: var(--primary);
+        }
+
+        .number-input .value {
+            font-size: 1.15rem;
+            font-weight: 700;
+            min-width: 36px;
+            text-align: center;
+            color: var(--primary);
+        }
+
+        .toggle-switch {
+            position: relative;
+            width: 56px;
+            height: 32px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--bg-input);
+            border: 1px solid var(--border-light);
+            border-radius: 32px;
+            transition: 0.3s ease;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 24px;
+            width: 24px;
+            left: 4px;
+            bottom: 3px;
+            background: var(--text-secondary);
+            border-radius: 50%;
+            transition: 0.3s ease;
+        }
+
+        .toggle-switch input:checked + .toggle-slider {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .toggle-switch input:checked + .toggle-slider:before {
+            transform: translateX(23px);
+            background: white;
+        }
+
+        .start-btn {
+            width: 100%;
+            padding: 18px;
+            border: none;
+            border-radius: 16px;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #8b5cf6 100%);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 24px;
+            box-shadow: 0 4px 24px var(--primary-glow);
+        }
+
+        .start-btn:active {
+            transform: scale(0.98);
+        }
+
+        .stats-preview {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .stat-box {
+            background: var(--bg-input);
+            padding: 18px 12px;
+            border-radius: 14px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .stat-box .number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--primary), #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-box .label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .quiz-page {
+            display: none;
+            min-height: 100vh;
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+
+        .quiz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            padding: 16px 20px;
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+        }
+
+        .quiz-progress {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .quiz-progress strong {
+            color: var(--primary);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .quiz-score {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-weight: 600;
+        }
+
+        .quiz-score .correct {
+            color: var(--success);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .quiz-score .wrong {
+            color: var(--danger);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: var(--bg-input);
+            border-radius: 3px;
+            margin-bottom: 24px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary-dark), var(--primary), #a78bfa);
+            border-radius: 3px;
+            transition: width 0.4s ease;
+        }
+
+        .question-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 28px 24px;
+            margin-bottom: 16px;
+        }
+
+        .question-type {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .question-type.pg {
+            background: rgba(129, 140, 248, 0.15);
+            color: var(--primary);
+            border: 1px solid rgba(129, 140, 248, 0.3);
+        }
+
+        .question-type.essay {
+            background: rgba(251, 191, 36, 0.15);
+            color: var(--warning);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+        }
+
+        .question-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        .question-text {
+            font-size: 1.05rem;
+            line-height: 1.75;
+            margin-bottom: 28px;
+            color: var(--text-primary);
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .option-btn {
+            width: 100%;
+            padding: 18px 20px;
+            border: 2px solid var(--border-light);
+            border-radius: 16px;
+            background: var(--bg-input);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .option-btn:active:not(.disabled) {
+            transform: scale(0.98);
+        }
+
+        .option-btn .option-letter {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 10px;
+            background: var(--bg-hover);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .option-btn .option-text {
+            padding-top: 4px;
+            line-height: 1.6;
+        }
+
+        .option-btn.correct {
+            border-color: var(--success);
+            background: rgba(52, 211, 153, 0.1);
+            box-shadow: 0 0 24px var(--success-glow);
+        }
+
+        .option-btn.correct .option-letter {
+            background: var(--success);
+            color: white;
+        }
+
+        .option-btn.wrong {
+            border-color: var(--danger);
+            background: rgba(248, 113, 113, 0.1);
+        }
+
+        .option-btn.wrong .option-letter {
+            background: var(--danger);
+            color: white;
+        }
+
+        .option-btn.disabled {
+            pointer-events: none;
+        }
+
+        .feedback-banner {
+            display: none;
+            padding: 16px 20px;
+            border-radius: 14px;
+            margin-top: 20px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            align-items: flex-start;
+            gap: 12px;
+            line-height: 1.6;
+        }
+
+        .feedback-banner.correct {
+            background: rgba(52, 211, 153, 0.15);
+            border: 1px solid rgba(52, 211, 153, 0.3);
+            color: var(--success);
+        }
+
+        .feedback-banner.wrong {
+            background: rgba(248, 113, 113, 0.1);
+            border: 1px solid rgba(248, 113, 113, 0.3);
+            color: var(--text-primary);
+        }
+
+        .feedback-banner .icon {
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+
+        .feedback-banner .correct-answer {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .essay-container {
+            margin-top: 8px;
+        }
+
+        .essay-textarea {
+            width: 100%;
+            min-height: 140px;
+            padding: 18px;
+            border: 2px solid var(--border-light);
+            border-radius: 16px;
+            background: var(--bg-input);
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            resize: vertical;
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+
+        .essay-textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px var(--primary-glow);
+        }
+
+        .essay-textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        .show-answer-btn {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #f59e0b, #fbbf24);
+            color: #000;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .show-answer-btn:active {
+            transform: scale(0.98);
+        }
+
+        .essay-answer {
+            display: none;
+            margin-top: 20px;
+            padding: 24px;
+            background: rgba(52, 211, 153, 0.08);
+            border: 1px solid rgba(52, 211, 153, 0.25);
+            border-radius: 16px;
+        }
+
+        .essay-answer h4 {
+            color: var(--success);
+            margin-bottom: 16px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .essay-answer .answer-content {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .essay-answer .answer-content strong {
+            color: var(--text-primary);
+        }
+
+        .next-btn {
+            width: 100%;
+            padding: 18px;
+            border: none;
+            border-radius: 14px;
+            background: var(--primary);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .next-btn:active {
+            transform: scale(0.98);
+        }
+
+        .result-page {
+            display: none;
+            min-height: 100vh;
+            padding: 24px 20px;
+            padding-bottom: 40px;
+        }
+
+        .result-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 28px;
+            padding: 48px 28px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .result-icon {
+            font-size: 4.5rem;
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .result-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .result-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+
+        .result-score {
+            font-family: 'Poppins', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary), #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 24px 0;
+            line-height: 1;
+        }
+
+        .result-score span {
+            font-size: 1.5rem;
+            opacity: 0.7;
+        }
+
+        .result-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin: 32px 0;
+        }
+
+        .result-stat {
+            padding: 20px 16px;
+            background: var(--bg-input);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+        }
+
+        .result-stat .value {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .result-stat .label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .result-stat.correct .value { color: var(--success); }
+        .result-stat.wrong .value { color: var(--danger); }
+
+        .retry-btn {
+            width: 100%;
+            padding: 18px;
+            border: none;
+            border-radius: 16px;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, #8b5cf6 100%);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 4px 24px var(--primary-glow);
+        }
+
+        .retry-btn:active { transform: scale(0.98); }
+
+        .review-toggle-btn {
+            width: 100%;
+            padding: 18px;
+            border: 2px solid var(--border-light);
+            border-radius: 16px;
+            background: transparent;
+            color: var(--text-primary);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 12px;
+        }
+
+        .review-toggle-btn:active { background: var(--bg-input); }
+
+        .review-section {
+            display: none;
+            margin-top: 32px;
+            text-align: left;
+        }
+
+        .review-header-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .review-item {
+            background: var(--bg-input);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 14px;
+            border-left: 4px solid;
+        }
+
+        .review-item.correct-item { border-left-color: var(--success); }
+        .review-item.wrong-item { border-left-color: var(--danger); }
+
+        .review-item-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .review-item-header .status-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        .review-item.correct-item .status-icon { background: rgba(52, 211, 153, 0.2); }
+        .review-item.wrong-item .status-icon { background: rgba(248, 113, 113, 0.2); }
+
+        .review-item-header span {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .review-question {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 14px;
+        }
+
+        .review-answer-row {
+            font-size: 0.85rem;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+
+        .review-answer-row.user-wrong {
+            background: rgba(248, 113, 113, 0.1);
+            color: var(--danger);
+        }
+
+        .review-answer-row.correct-ans {
+            background: rgba(52, 211, 153, 0.1);
+            color: var(--success);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            20%, 60% { transform: translateX(-6px); }
+            40%, 80% { transform: translateX(6px); }
+        }
+
+        .fade-in-up { animation: fadeInUp 0.35s ease; }
+        .shake { animation: shake 0.4s ease; }
+
+        ::-webkit-scrollbar { width: 0; height: 0; }
+
+        @supports (padding-top: env(safe-area-inset-top)) {
+            .settings-page, .quiz-page, .result-page {
+                padding-top: calc(24px + env(safe-area-inset-top));
+                padding-bottom: calc(40px + env(safe-area-inset-bottom));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- SETTINGS PAGE -->
+    <div class="settings-page" id="settingsPage">
+        <div class="settings-header">
+            <div class="logo-icon">🎯</div>
+            <h1>Prediksi UTS Forensik TI</h1>
+            <p>56 Soal PG + 5 Essay Akurasi Tinggi</p>
+        </div>
+
+        <div class="settings-card">
+            <h3>📝 Pengaturan Soal</h3>
+            <div class="setting-item">
+                <div class="setting-label">
+                    Jumlah Soal PG
+                    <span>Maksimal 56 soal</span>
+                </div>
+                <div class="number-input">
+                    <button onclick="adjustNumber('pgCount', -5)">−</button>
+                    <div class="value" id="pgCount">30</div>
+                    <button onclick="adjustNumber('pgCount', 5)">+</button>
+                </div>
+            </div>
+            <div class="setting-item">
+                <div class="setting-label">
+                    Jumlah Soal Essay
+                    <span>Maksimal 5 soal</span>
+                </div>
+                <div class="number-input">
+                    <button onclick="adjustNumber('essayCount', -1)">−</button>
+                    <div class="value" id="essayCount">5</div>
+                    <button onclick="adjustNumber('essayCount', 1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-card">
+            <h3>⚙️ Mode Latihan</h3>
+            <div class="setting-item">
+                <div class="setting-label">
+                    Acak Soal
+                    <span>Urutan soal diacak setiap sesi</span>
+                </div>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="shuffleQuestions" checked>
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+            <div class="setting-item">
+                <div class="setting-label">
+                    Acak Pilihan Jawaban
+                    <span>Urutan A/B/C/D diacak</span>
+                </div>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="shuffleOptions" checked>
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="settings-card">
+            <h3>📊 Bank Soal Tersedia</h3>
+            <div class="stats-preview">
+                <div class="stat-box">
+                    <div class="number">56</div>
+                    <div class="label">Soal PG</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">5</div>
+                    <div class="label">Soal Essay</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">61</div>
+                    <div class="label">Total</div>
+                </div>
+            </div>
+        </div>
+
+        <button class="start-btn" onclick="startQuiz()">Mulai Latihan →</button>
+    </div>
+
+    <!-- QUIZ PAGE -->
+    <div class="quiz-page" id="quizPage">
+        <div class="quiz-header">
+            <div class="quiz-progress">
+                Soal <strong id="currentNum">1</strong> / <span id="totalNum">35</span>
+            </div>
+            <div class="quiz-score">
+                <span class="correct">✓ <span id="correctCount">0</span></span>
+                <span class="wrong">✗ <span id="wrongCount">0</span></span>
+            </div>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="question-card fade-in-up" id="questionCard">
+            <span class="question-type pg" id="questionType">PILIHAN GANDA</span>
+            <div class="question-number" id="questionNumber">Pertanyaan 1</div>
+            <div class="question-text" id="questionText"></div>
+            
+            <div class="options-container" id="optionsContainer"></div>
+            <div class="feedback-banner" id="feedbackBanner"></div>
+
+            <div class="essay-container" id="essayContainer" style="display: none;">
+                <textarea class="essay-textarea" id="essayTextarea" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                <button class="show-answer-btn" onclick="showEssayAnswer()">📖 Lihat Kunci Jawaban</button>
+                <div class="essay-answer" id="essayAnswer"></div>
+                <button class="next-btn" id="essayNextBtn" onclick="nextQuestion()">Lanjut ke Soal Berikutnya →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESULT PAGE -->
+    <div class="result-page" id="resultPage">
+        <div class="result-card">
+            <span class="result-icon" id="resultIcon">🎉</span>
+            <h2 class="result-title" id="resultTitle">Excellent!</h2>
+            <p class="result-subtitle" id="resultSubtitle">Kamu sudah menyelesaikan semua soal</p>
+            <div class="result-score" id="resultScore">85<span>%</span></div>
+            
+            <div class="result-details">
+                <div class="result-stat correct">
+                    <div class="value" id="finalCorrect">17</div>
+                    <div class="label">Benar</div>
+                </div>
+                <div class="result-stat wrong">
+                    <div class="value" id="finalWrong">3</div>
+                    <div class="label">Salah</div>
+                </div>
+            </div>
+
+            <button class="retry-btn" onclick="restartQuiz()">🔄 Ulangi Latihan</button>
+            <button class="review-toggle-btn" onclick="toggleReview()">📋 Lihat Review Jawaban</button>
+
+            <div class="review-section" id="reviewSection">
+                <h3 class="review-header-title">📋 Review Jawaban</h3>
+                <div id="reviewContainer"></div>
+            </div>
+        </div>
+    </div>
+	
+    <script>
+        // ===== BANK SOAL PILIHAN GANDA (56 SOAL) =====
+        const pgQuestions = [
+            // 1. Definisi Processing (Mobile Forensik)
+            {
+                question: "Dibawah ini yang merupakan Processing pada proses mobile forensik yaitu:",
+                options: [
+                    "Melakukan ekstraksi dari barang bukti dengan metode yang sudah ditentukan",
+                    "Menjaga akses yang terlarang dari jarak jauh untuk kepentingan pengubahan data",
+                    "Tahap perolehan sampai pada tahapan pelaporan",
+                    "Persiapan mulai dari metode apa yang dilakukan dan tools yang akan digunakan"
+                ],
+                answer: 0
+            },
+            // 2. Tahap Awal (Mobile Forensik)
+            {
+                question: "Tahap awal proses mobile forensik yaitu:",
+                options: [
+                    "Preparation",
+                    "Isolation",
+                    "Intake",
+                    "Identification"
+                ],
+                answer: 2
+            },
+            // 3. Handheld Forensik
+            {
+                question: "Pemeriksaan hardware dan software yang merupakan unit terpadu dalam mengejar bukti untuk membantah atau membuktikan sebuah tuduhan yaitu:",
+                options: [
+                    "Handheld forensik",
+                    "Handheld device",
+                    "Disk Forensik",
+                    "Mobile forensik"
+                ],
+                answer: 0
+            },
+            // 4. Proses Isolation (Kecuali - Versi V-Class)
+            {
+                question: "Dibawah ini merupakan proses isolation pada mobile forensik, kecuali:",
+                options: [
+                    "Melakukan ekstraksi dari barang bukti dengan metode yang sudah ditentukan",
+                    "Proses agar perangkat mobile tidak terhubung dengan jaringan komunikasi",
+                    "Mencegah penambahan data baru ke telepon melalui panggilan masuk dan pesan teks",
+                    "Menjaga akses yang terlarang dari jarak jauh untuk kepentingan pengubahan data"
+                ],
+                answer: 0
+            },
+            // 5. Software Tools (Oxygen)
+            {
+                question: "Software tools digunakan untuk mengumpulkan bukti dari telepon genggam, dan memiliki kemampuan untuk mengumpulkan informasi perangkat yaitu:",
+                options: [
+                    "Isolation",
+                    "Volatilitas",
+                    "ProDiscover Forensic",
+                    "Oxygen Forensics Suite"
+                ],
+                answer: 3
+            },
+            // 6. Tujuan Production Honeypot
+            {
+                question: "Tujuan dari Production Honeypot yaitu:",
+                options: [
+                    "Memberikan informasi tentang packet data yang diberikan oleh penyusup ke sistem honeypot server",
+                    "Membantu mengurangi resiko keamanan jaringan pada sebuah organisasi",
+                    "Mendapatkan informasi mengenai aktivitas – aktivitas dari komunitas penyusup",
+                    "Memberikan layanan messenger untuk administrator apabila terdapat serangan-serangan"
+                ],
+                answer: 1
+            },
+            // 7. Keystroke Logger
+            {
+                question: "Honeypot dapat memberikan informasi tentang apa saja yang dilakukan oleh penyusup termasuk ketikan dari papan keyboard penyusup, disebut dengan:",
+                options: [
+                    "Monitoring or Logging",
+                    "Keystroke Logger",
+                    "Alerting Mechanism",
+                    "Network Devices Hardware"
+                ],
+                answer: 1
+            },
+            // 8. Indikasi Malware (Lampu)
+            {
+                question: "Di bawah ini yang tidak termasuk beberapa indikasi telah terinstall malware pada komputer yaitu:",
+                options: [
+                    "Lampu komputer terus menyala",
+                    "Pengaturan browser berubah, termasuk default web saat awal browser dibuka",
+                    "Browser homepage terus berubah",
+                    "Iklan pop-up muncul setelah browser ditutup"
+                ],
+                answer: 0
+            },
+            // 9. Karakteristik Honeypot (Deceptive)
+            {
+                question: "Karakteristik honeypot yang berperilaku dan terlihat seperti sistem yang normal yaitu:",
+                options: [
+                    "Decoy System",
+                    "Deceptive",
+                    "Closely Monitored",
+                    "Security Vulnerabilites"
+                ],
+                answer: 1
+            },
+            // 10. Jenis Malware (Backdoor)
+            {
+                question: "Jenis malware yang mampu mengacaukan lalu lintas jaringan, melakukan brute force untuk mengcrack password dan enkripsi, dan mendistribusikan serangan distributed denial of service (DDoS) yaitu:",
+                options: [
+                    "Backdoor",
+                    "Spyware",
+                    "Trojan Horse",
+                    "Wabbit"
+                ],
+                answer: 0
+            },
+            // 11. Proses isolation pada mobile forensik (Kecuali - Versi PDF)
+            {
+                question: "Proses isolasi merupakan tahapan krusial dalam Mobile Forensik. Tindakan-tindakan berikut ini merupakan bagian dari tujuan proses isolasi, KECUALI:",
+                options: [
+                    "Mencegah penambahan data baru ke telepon melalui panggilan masuk dan pesan teks",
+                    "Mencegah penambahan data baru yang masuk karena adanya sinyal internet",
+                    "Menjaga akses yang terlarang dari jarak jauh",
+                    "Melakukan unpack barang bukti sesuai metodologi dan membuat image hard disk"
+                ],
+                answer: 3
+            },
+            // 12. Keuntungan E-Commerce (Kecuali)
+            {
+                question: "Berikut ini adalah keuntungan-keuntungan yang ditawarkan oleh E-Commerce bagi bisnis, KECUALI:",
+                options: [
+                    "Menurunkan biaya operasi (operating cost)",
+                    "Meningkatkan market exposure",
+                    "Meningkatkan value chain",
+                    "Memperpanjang waktu product-cycle sehingga memperlambat inovasi"
+                ],
+                answer: 3
+            },
+            // 13. Kemampuan Disk Forensic (Yang Bukan)
+            {
+                question: "Kemampuan yang dapat dilakukan oleh Disk Forensik meliputi hal-hal berikut, YANG BUKAN adalah:",
+                options: [
+                    "Menganalisa access file",
+                    "Me-recover file-file yang terhapus",
+                    "Menganalisa dan memanfaatkan system logs",
+                    "Memastikan kualifikasi ahli dan peralatan"
+                ],
+                answer: 3
+            },
+            // 14. Bidang Keilmuan Forensik (Kecuali)
+            {
+                question: "Berikut adalah bidang keilmuan forensik tradisional (ilmu alam) dan BUKAN komputer forensik:",
+                options: [
+                    "Forensik pathologi",
+                    "Forensik dentistry",
+                    "Forensik toxicology",
+                    "Komputer forensik"
+                ],
+                answer: 3
+            },
+            // 15. Jenis peralatan pada pemodelan forensik (Kecuali)
+            {
+                question: "Peralatan yang dibutuhkan guna mendapatkan bukti-bukti yang dapat dipercaya meliputi klasifikasi berikut, KECUALI:",
+                options: [
+                    "Perangkat keras",
+                    "Perangkat lunak",
+                    "Media penyimpanan",
+                    "Perangkat Write Blocker"
+                ],
+                answer: 3
+            },
+            // 16. Asas pemanfaatan TI (Kecuali)
+            {
+                question: "Berikut ini adalah asas-asas pemanfaatan TI menurut UU ITE, KECUALI:",
+                options: [
+                    "Asas kepastian hukum",
+                    "Asas hati-hati",
+                    "Asas netral teknologi",
+                    "Asas Subjective territoriality"
+                ],
+                answer: 3
+            },
+            // 17. Tahap pengujian / Examination (Kecuali)
+            {
+                question: "Tahap Pengujian meliputi aktivitas berikut, KECUALI:",
+                options: [
+                    "Bypassing fitur-fitur sistem",
+                    "Filtrasi (eliminasi data)",
+                    "Mengalokasi dan mengekstrak file",
+                    "Menentukan barang bukti yang harus diamankan seperti notes"
+                ],
+                answer: 3
+            },
+            // 18. Karakteristik ahli forensik (Kecuali)
+            {
+                question: "Kriteria yang harus dimiliki seorang ahli forensik meliputi hal-hal berikut, KECUALI:",
+                options: [
+                    "Pengetahuan komputer dan hukum",
+                    "Obyektif dan tidak bias",
+                    "Penguasaan modifikasi data",
+                    "Selalu menggunakan penalaran kias (analogi) jika hukum tidak jelas"
+                ],
+                answer: 3
+            },
+            // 19. Pengertian dasar: Forensik
+            {
+                question: "Forensik didefinisikan sebagai suatu proses ilmiah yang bertujuan untuk:",
+                options: [
+                    "Penerapan sederhana penyelidikan komputer",
+                    "Mengidentifikasi bukti digital",
+                    "Mengumpulkan, menganalisa, dan menghadirkan berbagai bukti dalam sidang pengadilan",
+                    "Ilmu analisis barang bukti"
+                ],
+                answer: 2
+            },
+            // 20. Pengertian Komputer Forensik
+            {
+                question: "Menurut Moroni Parra (2002), Forensik Teknologi Informasi didefinisikan sebagai:",
+                options: [
+                    "Pengujian sistem komputer",
+                    "Pemeliharaan bukti komputer",
+                    "Suatu proses mengidentifikasi, memelihara, menganalisa dan menggunakan bukti digital menurut hukum yang berlaku",
+                    "Analisis sumber daya komputer"
+                ],
+                answer: 2
+            },
+            // 21. Tiga Komponen Digital Forensik
+            {
+                question: "Tiga komponen vital Digital Forensik adalah:",
+                options: [
+                    "Evidence, Integrity, Admissibility",
+                    "Identification, Collection, Reporting",
+                    "Manusia (People), Peralatan (Equipment), Aturan (Protocol)",
+                    "Hardware, Software, Firmware"
+                ],
+                answer: 2
+            },
+            // 22. Pengertian Informasi Elektronik
+            {
+                question: "Menurut UU ITE, satu atau sekumpulan data elektronik (tulisan, suara, gambar) yang memiliki arti disebut:",
+                options: [
+                    "Dokumen Elektronik",
+                    "Sistem Elektronik",
+                    "Informasi Elektronik",
+                    "Transaksi Elektronik"
+                ],
+                answer: 2
+            },
+            // 23. Pengertian Dokumen Elektronik
+            {
+                question: "Informasi Elektronik yang disimpan dalam bentuk digital yang dapat dilihat/ditampilkan melalui Komputer disebut:",
+                options: [
+                    "Informasi Elektronik",
+                    "Dokumen Elektronik",
+                    "Sistem Elektronik",
+                    "Jejak Digital"
+                ],
+                answer: 1
+            },
+            // 24. Pengertian Sistem Elektronik
+            {
+                question: "Serangkaian perangkat dan prosedur elektronik yang berfungsi mempersiapkan, mengumpulkan, dan mengolah Informasi Elektronik disebut:",
+                options: [
+                    "Hardware",
+                    "Software",
+                    "Sistem Elektronik",
+                    "Jaringan Komputer"
+                ],
+                answer: 2
+            },
+            // 25. Pengertian Transaksi Elektronik
+            {
+                question: "Perbuatan hukum yang dilakukan oleh para pihak dalam konteks elektronik disebut:",
+                options: [
+                    "Transaksi Elektronik",
+                    "Kontrak Elektronik",
+                    "Perdagangan Elektronik",
+                    "Komunikasi Data"
+                ],
+                answer: 0
+            },
+            // 26. Pengertian Handheld Device
+            {
+                question: "Perangkat bergerak dalam Mobile Forensik didefinisikan sebagai:",
+                options: [
+                    "Perangkat komputer tradisional",
+                    "Perangkat penyimpan informasi sensitif",
+                    "Satu-satunya perangkat yang dapat dimiliki oleh tersangka setiap saat berdasarkan ukurannya, dan merupakan perangkat boot siklus langsung",
+                    "Perangkat sistem komputer non-komputer"
+                ],
+                answer: 2
+            },
+            // 27. Spesifikasi Komputer Forensik: Forensik Disk
+            {
+                question: "Spesialisasi forensik pembuatan salinan bukti identik menggunakan write blocker adalah:",
+                options: [
+                    "Forensik File System",
+                    "Forensik Jaringan",
+                    "Forensik Disk",
+                    "Forensik Basis Data"
+                ],
+                answer: 2
+            },
+            // 28. Penjelasan Open Computer Systems
+            {
+                question: "Perangkat kategori Open Computer Systems memiliki ciri khas:",
+                options: [
+                    "Sistem telepon tradisional",
+                    "Ponsel dan smart card",
+                    "Sensor mobil",
+                    "Sistem yang memiliki media penyimpanan, keyboard, monitor (laptop, desktop, server)"
+                ],
+                answer: 3
+            },
+            // 29. Hukum Formal
+            {
+                question: "Hukum yang memuat peraturan tentang cara mengajukan perkara ke Pengadilan (Hukum Acara) adalah:",
+                options: [
+                    "Hukum Privat",
+                    "Hukum Publik",
+                    "Hukum Material",
+                    "Hukum Formal"
+                ],
+                answer: 3
+            },
+            // 30. Pengertian Hukum Publik
+            {
+                question: "Hukum yang mengatur hubungan antara Negara dengan warga negara disebut:",
+                options: [
+                    "Hukum Privat",
+                    "Hukum Publik (Hukum Negara)",
+                    "Hukum Material",
+                    "Hukum Formal"
+                ],
+                answer: 1
+            },
+            // 31. Asas Nasional Pasif
+            {
+                question: "Asas yang menyatakan UU Pidana berlaku bagi siapa saja di luar RI yang melanggar kepentingan hukum negara (misal: pemalsuan uang) adalah:",
+                options: [
+                    "Asas Teritorial",
+                    "Asas Nasional Aktif",
+                    "Asas Nasional Pasif",
+                    "Asas Universal"
+                ],
+                answer: 2
+            },
+            // 32. Asas Universal
+            {
+                question: "Asas yang memberlakukan UU Pidana terhadap perbuatan jahat yang merugikan keselamatan internasional adalah:",
+                options: [
+                    "Asas Teritorial",
+                    "Asas Nasional Aktif",
+                    "Asas Nasional Pasif",
+                    "Asas Universal"
+                ],
+                answer: 3
+            },
+            // 33. Alat bukti sah (KUHAP)
+            {
+                question: "Menurut Pasal 184 KUHAP, alat bukti yang sah adalah sebagai berikut, KECUALI:",
+                options: [
+                    "Keterangan saksi",
+                    "Keterangan terdakwa",
+                    "Informasi Elektronik atau Dokumen Elektronik",
+                    "Surat dan petunjuk"
+                ],
+                answer: 2
+            },
+            // 34. Pihak Pengambil Keputusan
+            {
+                question: "Pihak yang membuat keputusan berdasarkan pembuktian adalah:",
+                options: [
+                    "Penuntut Umum",
+                    "Penasehat Hukum",
+                    "Hakim",
+                    "Ahli Forensik"
+                ],
+                answer: 2
+            },
+            // 35. Urutan tahapan forensik
+            {
+                question: "Tahapan proses Komputer Forensik yang benar adalah:",
+                options: [
+                    "Persiapan, Snapshot, Analisa, Laporan",
+                    "Analisa, Pengujian, Pengumpulan, Laporan",
+                    "Pengumpulan, Pengujian, Analisa, Laporan",
+                    "Identifikasi, Isolasi, Pemrosesan, Verifikasi"
+                ],
+                answer: 2
+            },
+            // 36. Cara memahami risiko malware
+            {
+                question: "Pemahaman risiko malware dicapai dengan mengidentifikasi:",
+                options: [
+                    "Teknik penyebaran",
+                    "Perubahan pada komputer",
+                    "Sistem yang terkena dampak dan manipulasi informasi",
+                    "Tanda tangan digital"
+                ],
+                answer: 2
+            },
+            // 37. Tahapan transport
+            {
+                question: "Tahap Transport dalam penanganan insiden mencakup:",
+                options: [
+                    "Uji visual",
+                    "Image hard disk",
+                    "Uji otentikasi data",
+                    "Mengemas aman, memfoto, dan mendokumentasikan penanganan barang bukti"
+                ],
+                answer: 3
+            },
+            // 38. Tahap awal mobile forensik (Intake - Definisi Lengkap)
+            {
+                question: "Tahap awal Mobile Forensik di mana barang bukti diperoleh oleh Pemeriksa dan didokumentasikan adalah:",
+                options: [
+                    "Identification",
+                    "Preparation",
+                    "Processing",
+                    "Intake"
+                ],
+                answer: 3
+            },
+            // 39. Urutan Tahapan proses mobile forensik
+            {
+                question: "Urutan tahapan Mobile Forensik setelah tahap Isolation adalah:",
+                options: [
+                    "Identification, Preparation, Isolation",
+                    "Processing, Verification, Documentation/Reporting",
+                    "Verification, Presentation, Archiving",
+                    "Processing, Preparation, Archiving"
+                ],
+                answer: 1
+            },
+            // 40. Software tools forensik (Volatility)
+            {
+                question: "Perangkat lunak kerangka forensik memori untuk mengekstrak artefak dari RAM adalah:",
+                options: [
+                    "ProDiscover Forensic",
+                    "EnCase Forensic",
+                    "Oxygen Forensic Suite",
+                    "Volatility"
+                ],
+                answer: 3
+            },
+            // 41. Indikasi komputer terinstall malware (Kecuali - Versi PDF)
+            {
+                question: "Indikasi umum keberadaan malware, KECUALI:",
+                options: [
+                    "Iklan pop-up muncul",
+                    "Browser homepage berubah",
+                    "Lampu komputer berkedip tak wajar",
+                    "Integrasi penyimpanan yang semakin berkurang karena File System Jaringan"
+                ],
+                answer: 3
+            },
+            // 42. Klasifikasi Honeypot (Low-Interaction)
+            {
+                question: "Honeypot yang hanya mengemulasikan layanan dan membatasi koneksi penyerang ke beberapa port adalah:",
+                options: [
+                    "High-Interaction Honeypot",
+                    "Medium-Interaction Honeypot",
+                    "Low-Interaction Honeypot",
+                    "Research Honeypot"
+                ],
+                answer: 2
+            },
+            // 43. Transaksi internet banking
+            {
+                question: "Jenis layanan Bank dengan risiko paling tinggi dan wajib manajemen risiko adalah:",
+                options: [
+                    "Informational Internet Banking",
+                    "Communicative Internet Banking",
+                    "Transactional Internet Banking",
+                    "Standard Internet Banking"
+                ],
+                answer: 2
+            },
+            // 44. Perbuatan yang dilarang (UU ITE)
+            {
+                question: "Perbuatan dilarang terkait Informasi Elektronik adalah:",
+                options: [
+                    "Melanggar kesusilaan",
+                    "Berita bohong",
+                    "Melakukan tindakan yang berakibat terganggunya Sistem Elektronik",
+                    "Mengakses Komputer orang lain"
+                ],
+                answer: 2
+            },
+            // 45. Hukum Pembuktian Forensik TI
+            {
+                question: "Forensik TI dikategorikan sebagai Hukum Acara Pidana karena memuat prosedur pembuktian, sehingga diklasifikasikan sebagai:",
+                options: [
+                    "Hukum Material",
+                    "Hukum Publik",
+                    "Hukum Formal",
+                    "Hukum Privat"
+                ],
+                answer: 2
+            },
+            // 46. Metadata
+            {
+                question: "Informasi terstruktur yang mendeskripsikan informasi lain (data tentang data) adalah:",
+                options: [
+                    "File System",
+                    "Unallocated Space",
+                    "Metadata",
+                    "Slack Space"
+                ],
+                answer: 2
+            },
+            // 47. Analisa Barang Bukti Level Fisik
+            {
+                question: "Analisa untuk melihat cluster dan sektor tertentu guna mencari informasi dilakukan pada level:",
+                options: [
+                    "Level Forensik",
+                    "Level Logik",
+                    "Level Jaringan",
+                    "Level Fisik"
+                ],
+                answer: 3
+            },
+            // 48. Asas Teritorial
+            {
+                question: "Asas yang menetapkan UU Pidana berlaku bagi setiap orang yang melakukan kejahatan di dalam wilayah RI adalah:",
+                options: [
+                    "Asas Nasional Aktif",
+                    "Asas Nasional Pasif",
+                    "Asas Teritorial",
+                    "Asas Universal"
+                ],
+                answer: 2
+            },
+            // 49. Asas Nasional Aktif
+            {
+                question: "Asas yang menetapkan UU Pidana berlaku bagi WNI yang berada di luar negeri adalah:",
+                options: [
+                    "Asas Teritorial",
+                    "Asas Nasional Aktif",
+                    "Asas Nasional Pasif",
+                    "Asas Universal"
+                ],
+                answer: 1
+            },
+            // 50. Anti-Malware (Konteks)
+            {
+                question: "Fungsi utama perlindungan terhadap ancaman malware adalah:",
+                options: [
+                    "Analisis data sumber daya komputer",
+                    "Analisis lalu lintas jaringan",
+                    "Menjaga informasi dari ancaman untuk menjamin keberlangsungan bisnis",
+                    "Dokumentasi bukti komputer"
+                ],
+                answer: 2
+            },
+            // 51. Insiden Mencoba (Attempted Incident)
+            {
+                question: "Jika ancaman terdeteksi namun belum menyebabkan kerusakan penuh, langkah pencegahannya adalah:",
+                options: [
+                    "Freezing the Scene",
+                    "Keystroke Logger",
+                    "Strategi pencegahan (shutdown drop-zones, tanda tangan digital)",
+                    "Integritas media"
+                ],
+                answer: 2
+            },
+            // 52. Jejak Digital
+            {
+                question: "Informasi yang menunjukkan aktivitas pengguna dan sah jadi bukti (jejak digital) adalah:",
+                options: [
+                    "Slack space",
+                    "Write blocker",
+                    "Cookies, history bookmarks, log files, dan berkas dokumen",
+                    "Peralatan fisik"
+                ],
+                answer: 2
+            },
+            // 53. Backdoor (Versi Lengkap)
+            {
+                question: "Jenis malware yang mampu mengacaukan lalu lintas jaringan, melakukan brute force untuk mengcrack password dan enkripsi, dan mendistribusikan serangan distributed denial of service (DDoS) yaitu:",
+                options: [
+                    "Backdoor",
+                    "Spyware",
+                    "Trojan Horse",
+                    "Wabbit"
+                ],
+                answer: 0
+            },
+            // 54. Keystroke Logger (Versi Lengkap)
+            {
+                question: "Honeypot dapat memberikan informasi tentang apa saja yang dilakukan oleh penyusup termasuk ketikan dari papan keyboard penyusup, disebut dengan:",
+                options: [
+                    "Monitoring or Logging",
+                    "Keystroke Logger",
+                    "Alerting Mechanism",
+                    "Network Devices Hardware"
+                ],
+                answer: 1
+            },
+            // 55. Deceptive (Versi Lengkap)
+            {
+                question: "Karakteristik honeypot yang berperilaku dan terlihat seperti sistem yang normal yaitu:",
+                options: [
+                    "Decoy System",
+                    "Deceptive",
+                    "Closely Monitored",
+                    "Security Vulnerabilites"
+                ],
+                answer: 1
+            },
+            // 56. Intake
+            {
+                question: "Tahap awal proses mobile forensik yaitu:",
+                options: [
+                    "Preparation",
+                    "Isolation",
+                    "Intake",
+                    "Identification"
+                ],
+                answer: 2
+            }
+        ];
+		        // ===== BANK SOAL ESSAY (5 SOAL) =====
+        const essayQuestions = [
+            // Essay 1: Perbandingan Asas Yurisdiksi Hukum Pidana
+            {
+                question: "Jelaskan dan bandingkan tiga Asas berlakunya Hukum Pidana menurut tempat (Pasal 2–9 KUHP) yang menjadi dasar yurisdiksi dalam penanganan kejahatan TI lintas batas: Asas Teritorial, Asas Nasional Aktif, dan Asas Nasional Pasif.",
+                answer: `<div class="answer-content">
+                    <p><strong>1. Asas Teritorial:</strong></p>
+                    <p>Undang-Undang Hukum Pidana Indonesia berlaku terhadap setiap orang yang melakukan pelanggaran atau kejahatan di dalam wilayah Republik Indonesia. Artinya, siapa pun (WNI maupun WNA) yang melakukan tindak pidana di wilayah RI akan dikenakan hukum pidana Indonesia.</p>
+                    
+                    <p><strong>2. Asas Nasional Aktif:</strong></p>
+                    <p>UU Hukum Pidana Indonesia berlaku juga bagi Warga Negara Indonesia (WNI) yang berada di luar negeri. Jadi meskipun WNI melakukan kejahatan di negara lain, mereka tetap bisa dijerat dengan hukum pidana Indonesia.</p>
+                    
+                    <p><strong>3. Asas Nasional Pasif (Protektif):</strong></p>
+                    <p>UU Hukum Pidana Indonesia berlaku bagi WNI maupun WNA di luar RI, karena kepentingan hukum suatu negara yang dilanggar. Contoh: pemalsuan uang Indonesia, materai, atau cap negara yang dilakukan di luar negeri tetap dapat dituntut dengan hukum Indonesia karena merugikan kepentingan negara.</p>
+                </div>`
+            },
+            // Essay 2: Proses dan Kebutuhan Krusial dalam Mobile Forensik
+            {
+                question: "Tuliskan urutan lengkap Tahapan Proses Mobile Forensik. Kemudian, jelaskan mengapa tahap Isolation (Isolasi) dianggap sebagai proses yang krusial dan membedakannya dari Computer Forensics tradisional.",
+                answer: `<div class="answer-content">
+                    <p><strong>Urutan Lengkap Tahapan Proses Mobile Forensik:</strong></p>
+                    <ol>
+                        <li><strong>Intake</strong> - Penerimaan barang bukti</li>
+                        <li><strong>Identification</strong> - Identifikasi kewenangan, tujuan, dan spesifikasi perangkat</li>
+                        <li><strong>Preparation</strong> - Penentuan metode dan tools</li>
+                        <li><strong>Isolation</strong> - Isolasi perangkat dari jaringan</li>
+                        <li><strong>Processing</strong> - Ekstraksi dan analisis data</li>
+                        <li><strong>Verification</strong> - Verifikasi data yang diekstrak</li>
+                        <li><strong>Documentation/Reporting</strong> - Dokumentasi dan pelaporan</li>
+                        <li><strong>Presentation</strong> - Presentasi hasil</li>
+                        <li><strong>Archiving</strong> - Pengarsipan</li>
+                    </ol>
+                    
+                    <p><strong>Mengapa Tahap Isolation Krusial:</strong></p>
+                    <p>Proses isolasi sangat penting agar perangkat mobile tidak terhubung dengan jaringan komunikasi (seluler, Bluetooth, WiFi). Tujuan isolasi adalah:</p>
+                    <ul>
+                        <li>Mencegah penambahan data baru (panggilan masuk, pesan teks, data internet)</li>
+                        <li>Menjaga akses terlarang dari jarak jauh untuk kepentingan pengubahan data</li>
+                        <li>Menjaga integritas barang bukti digital</li>
+                    </ul>
+                    <p>Hal ini membedakan Mobile Forensics dari Computer Forensics tradisional karena perangkat mobile selalu terhubung ke jaringan dan dapat menerima/mengirim data secara real-time.</p>
+                </div>`
+            },
+            // Essay 3: Integritas Bukti melalui Chain of Custody
+            {
+                question: "Apa yang dimaksud dengan Rangkaian Pemeliharaan (Chain of Custody)? Jelaskan bagaimana konsep ini diterapkan selama tahapan Transport barang bukti, dan mengapa dokumentasi ini fundamental untuk menjaga integritas bukti digital di pengadilan.",
+                answer: `<div class="answer-content">
+                    <p><strong>Definisi Chain of Custody (Rangkaian Pemeliharaan):</strong></p>
+                    <p>Chain of Custody merupakan faktor yang tidak berkaitan dengan barang bukti secara fisik, tetapi merupakan dokumentasi yang mencatat:</p>
+                    <ul>
+                        <li>Setiap evidence (barang bukti)</li>
+                        <li>Pemiliknya</li>
+                        <li>Waktu dan tempat ditemukan</li>
+                        <li>Siapa yang menemukan dan melakukan pemeriksaan</li>
+                    </ul>
+                    <p>Chain of Custody menjamin keutuhan dan kelayakan data.</p>
+                    
+                    <p><strong>Penerapan pada Tahap Transport:</strong></p>
+                    <p>Tahap Transport (Pemindahan) mencakup:</p>
+                    <ul>
+                        <li>Melakukan pengemasan secara aman</li>
+                        <li>Memfoto barang bukti</li>
+                        <li>Mendokumentasikan penanganan barang bukti sejak meninggalkan tempat kejadian sampai ke laboratorium pengujian</li>
+                    </ul>
+                    
+                    <p><strong>Kekrusialan untuk Integritas:</strong></p>
+                    <p>Jika proses Chain of Custody atau dokumentasi tidak memadai atau ada kesalahan, maka:</p>
+                    <ul>
+                        <li>Barang bukti bisa dirusak atau diubah</li>
+                        <li>Informasi yang berharga bisa terlewat</li>
+                        <li>Barang bukti dapat ditolak di pengadilan</li>
+                    </ul>
+                </div>`
+            },
+            // Essay 4: Perbedaan Klasifikasi Honeypot
+            {
+                question: "Jelaskan perbedaan mendasar antara Low-Interaction Honeypot dan High-Interaction Honeypot berdasarkan tingkat interaksi yang diizinkan dan risiko keamanan yang dihadapi.",
+                answer: `<div class="answer-content">
+                    <p><strong>1. Low-Interaction Honeypot:</strong></p>
+                    <ul>
+                        <li><strong>Tingkat Interaksi:</strong> Rendah</li>
+                        <li><strong>Mekanisme:</strong> Didesain hanya untuk mengemulasikan service (layanan) seperti pada server asli</li>
+                        <li><strong>Akses Penyerang:</strong> Penyerang hanya mampu memeriksa dan terkoneksi ke satu atau beberapa port saja</li>
+                        <li><strong>Risiko Keamanan:</strong> Relatif rendah karena akses terbatas</li>
+                        <li><strong>Informasi yang Didapat:</strong> Terbatas pada aktivitas port yang diemulasi</li>
+                    </ul>
+                    
+                    <p><strong>2. High-Interaction Honeypot:</strong></p>
+                    <ul>
+                        <li><strong>Tingkat Interaksi:</strong> Tinggi</li>
+                        <li><strong>Mekanisme:</strong> Terdapat sistem operasi nyata di dalamnya di mana penyerang dapat berinteraksi secara langsung dan tidak ada batasan (chroot/jail)</li>
+                        <li><strong>Akses Penyerang:</strong> Penyerang dapat memiliki akses root penuh ke sistem</li>
+                        <li><strong>Risiko Keamanan:</strong> Tinggi karena penyerang memiliki kontrol penuh</li>
+                        <li><strong>Informasi yang Didapat:</strong> Sangat banyak karena semua aktivitas serangan dapat direkam secara detail</li>
+                    </ul>
+                    
+                    <p><strong>Kesimpulan:</strong> Semakin tinggi tingkat interaksi, semakin tinggi risiko keamanan, namun semakin banyak pula informasi yang dapat dikumpulkan tentang teknik dan perilaku penyerang.</p>
+                </div>`
+            },
+            // Essay 5: Landasan Forensik TI (Komponen dan Hukum)
+            {
+                question: "Jelaskan tiga Komponen Forensik Digital yang menjadi landasan praktik pengumpulan, analisis, dan pelaporan data digital. Kemudian, jelaskan mengapa Forensik TI dikategorikan sebagai bagian dari Hukum Formal.",
+                answer: `<div class="answer-content">
+                    <p><strong>Tiga Komponen Forensik Digital:</strong></p>
+                    
+                    <p><strong>1. Manusia (People):</strong></p>
+                    <p>Diperlukan kualifikasi untuk mencapai manusia yang berkualitas. Ahli forensik harus memiliki pengetahuan tentang komputer, hukum, bersikap obyektif, dan tidak bias.</p>
+                    
+                    <p><strong>2. Peralatan (Equipment):</strong></p>
+                    <p>Diperlukan sejumlah perangkat atau alat yang tepat untuk mendapatkan bukti yang dapat dipercaya dan bukan sekadar bukti palsu. Termasuk perangkat keras, perangkat lunak, dan media penyimpanan.</p>
+                    
+                    <p><strong>3. Aturan (Protocol):</strong></p>
+                    <p>Diperlukan dalam menggali, mendapatkan, menganalisis, dan akhirnya menyajikan dalam bentuk laporan yang akurat. Protokol memastikan konsistensi dan keabsahan proses forensik.</p>
+                    
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 16px 0;">
+                    
+                    <p><strong>Mengapa Forensik TI Dikategorikan sebagai Hukum Formal:</strong></p>
+                    
+                    <p>Forensik TI dikategorikan sebagai bagian dari <strong>Hukum Formal</strong> (Hukum Proses atau Hukum Acara) karena:</p>
+                    <ul>
+                        <li>Forensik TI memuat tentang <strong>cara-cara/prosedur pembuktian</strong> terjadinya suatu pelanggaran/kejahatan di bidang TI</li>
+                        <li>Tujuannya agar dapat <strong>diajukan ke Pengadilan</strong> untuk mendapatkan Putusan Hakim</li>
+                        <li>Hukum Formal adalah hukum yang memuat peraturan tentang <strong>cara melaksanakan dan mempertahankan Hukum Material</strong></li>
+                    </ul>
+                    
+                    <p>Berbeda dengan Hukum Material yang memuat isi/substansi hukum, Hukum Formal fokus pada prosedur dan tata cara pelaksanaannya.</p>
+                </div>`
+            }
+        ];
+
+        // ===== GLOBAL VARIABLES =====
+        let currentQuestions = [];
+        let currentIndex = 0;
+        let correctAnswers = 0;
+        let wrongAnswers = 0;
+        let userAnswers = [];
+        let settings = {
+            pgCount: 30,
+            essayCount: 5,
+            shuffleQuestions: true,
+            shuffleOptions: true
+        };
+
+        // ===== UTILITY FUNCTIONS =====
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        function adjustNumber(id, delta) {
+            const element = document.getElementById(id);
+            let value = parseInt(element.textContent);
+            
+            if (id === 'pgCount') {
+                value = Math.max(5, Math.min(56, value + delta));
+            } else if (id === 'essayCount') {
+                value = Math.max(0, Math.min(5, value + delta));
+            }
+            
+            element.textContent = value;
+        }
+
+        // ===== QUIZ INITIALIZATION =====
+        function startQuiz() {
+            settings.pgCount = parseInt(document.getElementById('pgCount').textContent);
+            settings.essayCount = parseInt(document.getElementById('essayCount').textContent);
+            settings.shuffleQuestions = document.getElementById('shuffleQuestions').checked;
+            settings.shuffleOptions = document.getElementById('shuffleOptions').checked;
+
+            let selectedPG = [...pgQuestions];
+            let selectedEssay = [...essayQuestions];
+
+            if (settings.shuffleQuestions) {
+                selectedPG = shuffleArray(selectedPG);
+                selectedEssay = shuffleArray(selectedEssay);
+            }
+
+            selectedPG = selectedPG.slice(0, settings.pgCount);
+            selectedEssay = selectedEssay.slice(0, settings.essayCount);
+
+            selectedPG = selectedPG.map((q, idx) => ({ ...q, type: 'pg', originalIndex: idx }));
+            selectedEssay = selectedEssay.map((q, idx) => ({ ...q, type: 'essay', originalIndex: idx }));
+
+            currentQuestions = [...selectedPG, ...selectedEssay];
+
+            if (settings.shuffleOptions) {
+                currentQuestions.forEach(q => {
+                    if (q.type === 'pg') {
+                        const correctOption = q.options[q.answer];
+                        const shuffledOptions = shuffleArray([...q.options]);
+                        q.options = shuffledOptions;
+                        q.answer = shuffledOptions.indexOf(correctOption);
+                    }
+                });
+            }
+
+            currentIndex = 0;
+            correctAnswers = 0;
+            wrongAnswers = 0;
+            userAnswers = [];
+
+            document.getElementById('totalNum').textContent = currentQuestions.length;
+            document.getElementById('settingsPage').style.display = 'none';
+            document.getElementById('quizPage').style.display = 'block';
+
+            loadQuestion();
+        }
+
+        // ===== QUESTION LOADING =====
+        function loadQuestion() {
+            const question = currentQuestions[currentIndex];
+            const questionCard = document.getElementById('questionCard');
+            
+            document.getElementById('currentNum').textContent = currentIndex + 1;
+            document.getElementById('correctCount').textContent = correctAnswers;
+            document.getElementById('wrongCount').textContent = wrongAnswers;
+            
+            const progress = ((currentIndex) / currentQuestions.length) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+
+            questionCard.classList.remove('fade-in-up');
+            void questionCard.offsetWidth;
+            questionCard.classList.add('fade-in-up');
+
+            const feedbackBanner = document.getElementById('feedbackBanner');
+            feedbackBanner.style.display = 'none';
+            feedbackBanner.className = 'feedback-banner';
+
+            const typeElement = document.getElementById('questionType');
+            if (question.type === 'pg') {
+                typeElement.innerHTML = '📝 PILIHAN GANDA';
+                typeElement.className = 'question-type pg';
+            } else {
+                typeElement.innerHTML = '✍️ ESSAY';
+                typeElement.className = 'question-type essay';
+            }
+
+            document.getElementById('questionNumber').textContent = `Pertanyaan ${currentIndex + 1}`;
+            document.getElementById('questionText').textContent = question.question;
+
+            const optionsContainer = document.getElementById('optionsContainer');
+            const essayContainer = document.getElementById('essayContainer');
+
+            if (question.type === 'pg') {
+                optionsContainer.style.display = 'flex';
+                essayContainer.style.display = 'none';
+
+                const letters = ['A', 'B', 'C', 'D'];
+                optionsContainer.innerHTML = question.options.map((opt, idx) => `
+                    <button class="option-btn" onclick="selectOption(${idx})" id="option-${idx}">
+                        <span class="option-letter">${letters[idx]}</span>
+                        <span class="option-text">${opt}</span>
+                    </button>
+                `).join('');
+            } else {
+                optionsContainer.style.display = 'none';
+                essayContainer.style.display = 'block';
+                
+                document.getElementById('essayTextarea').value = '';
+                document.getElementById('essayAnswer').style.display = 'none';
+                document.getElementById('essayNextBtn').style.display = 'none';
+                
+                document.getElementById('essayAnswer').innerHTML = `
+                    <h4>✅ Kunci Jawaban:</h4>
+                    ${question.answer}
+                `;
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // ===== ANSWER SELECTION (AUTO-NEXT UNTUK BENAR DAN SALAH) =====
+        function selectOption(selectedIndex) {
+            const question = currentQuestions[currentIndex];
+            const options = document.querySelectorAll('.option-btn');
+            const isCorrect = selectedIndex === question.answer;
+            const feedbackBanner = document.getElementById('feedbackBanner');
+
+            // Disable semua opsi
+            options.forEach(opt => opt.classList.add('disabled'));
+
+            // Tandai jawaban benar selalu
+            options[question.answer].classList.add('correct');
+            
+            // Tandai jawaban salah jika user salah
+            if (!isCorrect) {
+                options[selectedIndex].classList.add('wrong');
+                options[selectedIndex].classList.add('shake');
+            }
+
+            // Update skor
+            if (isCorrect) {
+                correctAnswers++;
+            } else {
+                wrongAnswers++;
+            }
+
+            // Tampilkan feedback banner
+            feedbackBanner.style.display = 'flex';
+            if (isCorrect) {
+                feedbackBanner.className = 'feedback-banner correct';
+                feedbackBanner.innerHTML = `
+                    <span class="icon">✓</span>
+                    <span class="message">Jawaban Benar! 🎉</span>
+                `;
+            } else {
+                feedbackBanner.className = 'feedback-banner wrong';
+                feedbackBanner.innerHTML = `
+                    <span class="icon">✗</span>
+                    <div class="message">
+                        <div>Jawaban Salah!</div>
+                        <div style="margin-top: 8px; color: var(--success);">
+                            <strong>Jawaban yang benar:</strong><br>
+                            ${question.options[question.answer]}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Simpan jawaban untuk review
+            userAnswers.push({
+                questionNumber: currentIndex + 1,
+                question: question.question,
+                userAnswer: question.options[selectedIndex],
+                correctAnswer: question.options[question.answer],
+                isCorrect: isCorrect,
+                type: 'pg'
+            });
+
+            // Update display skor
+            document.getElementById('correctCount').textContent = correctAnswers;
+            document.getElementById('wrongCount').textContent = wrongAnswers;
+
+            // Auto next setelah delay (benar = 1 detik, salah = 2.5 detik agar bisa baca)
+            setTimeout(() => {
+                nextQuestion();
+            }, isCorrect ? 1000 : 2500);
+        }
+
+        function showEssayAnswer() {
+            const question = currentQuestions[currentIndex];
+            
+            document.getElementById('essayAnswer').style.display = 'block';
+            document.getElementById('essayNextBtn').style.display = 'block';
+            
+            userAnswers.push({
+                questionNumber: currentIndex + 1,
+                question: question.question,
+                type: 'essay',
+                userAnswer: document.getElementById('essayTextarea').value || '(Tidak dijawab)',
+                isCorrect: null
+            });
+
+            document.getElementById('essayAnswer').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // ===== NAVIGATION =====
+        function nextQuestion() {
+            currentIndex++;
+            
+            if (currentIndex >= currentQuestions.length) {
+                showResult();
+            } else {
+                loadQuestion();
+            }
+        }
+
+        // ===== RESULT PAGE =====
+        function showResult() {
+            document.getElementById('quizPage').style.display = 'none';
+            document.getElementById('resultPage').style.display = 'block';
+            document.getElementById('reviewSection').style.display = 'none';
+
+            const totalPG = userAnswers.filter(a => a.type === 'pg').length;
+            const percentage = totalPG > 0 ? Math.round((correctAnswers / totalPG) * 100) : 0;
+
+            let icon, title, subtitle;
+            if (percentage >= 90) {
+                icon = '🏆';
+                title = 'Luar Biasa!';
+                subtitle = 'Kamu menguasai materi dengan sangat baik!';
+            } else if (percentage >= 80) {
+                icon = '🌟';
+                title = 'Excellent!';
+                subtitle = 'Performa yang sangat bagus!';
+            } else if (percentage >= 70) {
+                icon = '🎉';
+                title = 'Bagus!';
+                subtitle = 'Terus tingkatkan pemahamanmu!';
+            } else if (percentage >= 60) {
+                icon = '💪';
+                title = 'Cukup Baik!';
+                subtitle = 'Masih perlu latihan lagi ya!';
+            } else if (percentage >= 50) {
+                icon = '📖';
+                title = 'Hampir!';
+                subtitle = 'Ayo pelajari lagi materinya!';
+            } else {
+                icon = '📚';
+                title = 'Semangat!';
+                subtitle = 'Jangan menyerah, terus belajar!';
+            }
+
+            document.getElementById('resultIcon').textContent = icon;
+            document.getElementById('resultTitle').textContent = title;
+            document.getElementById('resultSubtitle').textContent = subtitle;
+            document.getElementById('resultScore').innerHTML = `${percentage}<span>%</span>`;
+            document.getElementById('finalCorrect').textContent = correctAnswers;
+            document.getElementById('finalWrong').textContent = wrongAnswers;
+
+            generateReview();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function generateReview() {
+            const container = document.getElementById('reviewContainer');
+            container.innerHTML = '';
+
+            const pgAnswers = userAnswers.filter(a => a.type === 'pg');
+
+            if (pgAnswers.length === 0) {
+                container.innerHTML = '<p style="color: var(--text-secondary); text-align: center; padding: 20px;">Tidak ada soal PG yang dikerjakan.</p>';
+                return;
+            }
+
+            pgAnswers.forEach((answer) => {
+                const itemClass = answer.isCorrect ? 'correct-item' : 'wrong-item';
+                const statusIcon = answer.isCorrect ? '✓' : '✗';
+                const statusText = answer.isCorrect ? 'Benar' : 'Salah';
+
+                let html = `
+                    <div class="review-item ${itemClass}">
+                        <div class="review-item-header">
+                            <span class="status-icon">${statusIcon}</span>
+                            <span>Soal ${answer.questionNumber} • ${statusText}</span>
+                        </div>
+                        <div class="review-question">${answer.question}</div>
+                `;
+
+                if (!answer.isCorrect) {
+                    html += `
+                        <div class="review-answer-row user-wrong">
+                            <strong>Jawaban Anda:</strong> ${answer.userAnswer}
+                        </div>
+                    `;
+                }
+
+                html += `
+                        <div class="review-answer-row correct-ans">
+                            <strong>Jawaban Benar:</strong> ${answer.correctAnswer}
+                        </div>
+                    </div>
+                `;
+
+                container.innerHTML += html;
+            });
+        }
+
+        function toggleReview() {
+            const reviewSection = document.getElementById('reviewSection');
+            const btn = document.querySelector('.review-toggle-btn');
+            
+            if (reviewSection.style.display === 'none' || reviewSection.style.display === '') {
+                reviewSection.style.display = 'block';
+                btn.textContent = '🔼 Sembunyikan Review';
+                reviewSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                reviewSection.style.display = 'none';
+                btn.textContent = '📋 Lihat Review Jawaban';
+            }
+        }
+
+        function restartQuiz() {
+            document.getElementById('resultPage').style.display = 'none';
+            document.getElementById('reviewSection').style.display = 'none';
+            document.getElementById('settingsPage').style.display = 'block';
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // ===== KEYBOARD SHORTCUTS =====
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('quizPage').style.display === 'block') {
+                const question = currentQuestions[currentIndex];
+                if (question && question.type === 'pg') {
+                    const options = document.querySelectorAll('.option-btn');
+                    const isDisabled = options[0] && options[0].classList.contains('disabled');
+                    
+                    if (!isDisabled) {
+                        if (e.key === '1' || e.key === 'a' || e.key === 'A') selectOption(0);
+                        if (e.key === '2' || e.key === 'b' || e.key === 'B') selectOption(1);
+                        if (e.key === '3' || e.key === 'c' || e.key === 'C') selectOption(2);
+                        if (e.key === '4' || e.key === 'd' || e.key === 'D') selectOption(3);
+                    }
+                }
+            }
+        });
+
+        // ===== PREVENT ZOOM =====
+        document.addEventListener('gesturestart', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
