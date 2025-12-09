@@ -824,7 +824,7 @@
         <div class="settings-header">
             <div class="logo-icon">🎯</div>
             <h1>Prediksi UTS Forensik TI</h1>
-            <p>57 Soal PG + 5 Essay</p>
+            <p>75 Soal PG + 5 Essay</p>
         </div>
 
         <div class="settings-card">
@@ -832,7 +832,7 @@
             <div class="setting-item">
                 <div class="setting-label">
                     Jumlah Soal PG
-                    <span>Maksimal 57 soal</span>
+                    <span>Maksimal 75 soal</span>
                 </div>
                 <div class="number-input">
                     <button onclick="adjustNumber('pgCount', -5)">−</button>
@@ -881,7 +881,7 @@
             <h3>📊 Bank Soal Tersedia</h3>
             <div class="stats-preview">
                 <div class="stat-box">
-                    <div class="number">57</div>
+                    <div class="number">75</div>
                     <div class="label">Soal PG</div>
                 </div>
                 <div class="stat-box">
@@ -961,635 +961,619 @@
     </div>
 	
     <script>
-      // ===== BANK SOAL PILIHAN GANDA (57 SOAL - SUDAH DIBERSIHKAN) =====
+      // ===== BANK SOAL PILIHAN GANDA (75 SOAL - SUDAH DIBERSIHKAN) =====
 const pgQuestions = [
-    // 1. Definisi Processing (Mobile Forensik)
+    // ==================================================================
+    // BAGIAN 1: SOAL V-CLASS (PRIORITAS UTAMA - SERING MUNCUL)
+    // ==================================================================
     {
-        question: "Dibawah ini yang merupakan Processing pada proses mobile forensik yaitu:",
-        options: [
-            "Melakukan ekstraksi dari barang bukti dengan metode yang sudah ditentukan",
-            "Menjaga akses yang terlarang dari jarak jauh untuk kepentingan pengubahan data",
-            "Tahap perolehan sampai pada tahapan pelaporan",
-            "Persiapan mulai dari metode apa yang dilakukan dan tools yang akan digunakan"
+        "question": "Adanya landasan hukum bagi pemanfaatan Teknologi Informasi dan Transaksi Elektronik serta segala sesuatu yang mendukung penyelenggaraannya yang mendapatkan pengakuan hukum di dalam dan di luar pengadilan, salah satu Asas Pemanfaatan Teknologi Informasi dan Transaksi Elektronik, yaitu:",
+        "options": [
+            "Asas manfaat",
+            "Asas kehati-hatian",
+            "Asas kepastian hukum",
+            "Asas kenetralan penggunaan teknologi"
         ],
-        answer: 0
+        "answer": 2
     },
-    // 2. Tahap Awal (Mobile Forensik)
     {
-        question: "Tahap awal proses mobile forensik yaitu:",
-        options: [
-            "Preparation",
-            "Isolation",
-            "Intake",
-            "Identification"
+        "question": "Akronim PPAD pada komputer Forensik yang dilakukan untuk memastikan data tidak berubah, adalah:",
+        "options": [
+            "Analyze",
+            "Preserve",
+            "Protect",
+            "Documentation"
         ],
-        answer: 2
+        "answer": 1
     },
-    // 3. Handheld Forensik
     {
-        question: "Pemeriksaan hardware dan software yang merupakan unit terpadu dalam mengejar bukti untuk membantah atau membuktikan sebuah tuduhan yaitu:",
-        options: [
-            "Handheld forensik",
-            "Handheld device",
-            "Disk Forensik",
-            "Mobile forensik"
+        "question": "Suatu proses mengidentifikasi, memelihara, menganalisa dan menggunakan bukti digital menurut hukum yang berlaku (Moroni Parra, 2002) adalah definisi dari:",
+        "options": [
+            "Barang bukti digital",
+            "Keamanan komputer",
+            "Forensik Teknologi Informasi",
+            "Intrusion Detection System"
         ],
-        answer: 0
+        "answer": 2
     },
-    // 4. Proses Isolation (Kecuali - Versi V-Class)
     {
-        question: "Dibawah ini merupakan proses isolation pada mobile forensik, kecuali:",
-        options: [
-            "Melakukan ekstraksi dari barang bukti dengan metode yang sudah ditentukan",
-            "Proses agar perangkat mobile tidak terhubung dengan jaringan komunikasi",
-            "Mencegah penambahan data baru ke telepon melalui panggilan masuk dan pesan teks",
-            "Menjaga akses yang terlarang dari jarak jauh untuk kepentingan pengubahan data"
+        "question": "Dalam Manajemen barang bukti digital terdapat istilah “The Chain of Custody”, maknanya adalah:",
+        "options": [
+            "Pemeliharaan dengan meminimalisir kerusakan akibat karena investigasi",
+            "Barang bukti harus memiliki hubungan yang relevan dengan kasus yang ada",
+            "Melakukan pengujian, menilai dan mengekstrak kepingan informasi",
+            "Melakukan analisa untuk merumuskan kesimpulan"
         ],
-        answer: 0
+        "answer": 0
     },
-    // 5. Software Tools (Oxygen)
     {
-        question: "Software tools digunakan untuk mengumpulkan bukti dari telepon genggam, dan memiliki kemampuan untuk mengumpulkan informasi perangkat yaitu:",
-        options: [
-            "Isolation",
-            "Volatilitas",
-            "ProDiscover Forensic",
-            "Oxygen Forensics Suite"
+        "question": "Data yang dapat dijadikan barang bukti digital, yaitu data PIN (Personal Identification Number) dan PUK (Personal Unlocking Key) dapat ditemukan pada:",
+        "options": [
+            "SIM Card / USIM (3G SIM)",
+            "Handset Memory",
+            "Network Service Provider",
+            "Memory Card"
         ],
-        answer: 3
+        "answer": 0
     },
-    // 6. Tujuan Production Honeypot
     {
-        question: "Tujuan dari Production Honeypot yaitu:",
-        options: [
-            "Memberikan informasi tentang packet data yang diberikan oleh penyusup ke sistem honeypot server",
-            "Membantu mengurangi resiko keamanan jaringan pada sebuah organisasi",
-            "Mendapatkan informasi mengenai aktivitas – aktivitas dari komunitas penyusup",
-            "Memberikan layanan messenger untuk administrator apabila terdapat serangan-serangan"
+        "question": "Data yang dapat dijadikan barang bukti digital, yaitu data subscriber information, call data record, subscriber location dan tracking physical device dapat ditemukan pada:",
+        "options": [
+            "Network Service Provider",
+            "SIM Card / USIM (3G SIM)",
+            "Memory Card",
+            "Handset Memory"
         ],
-        answer: 1
+        "answer": 0
     },
-    // 7. Keystroke Logger
     {
-        question: "Honeypot dapat memberikan informasi tentang apa saja yang dilakukan oleh penyusup termasuk ketikan dari papan keyboard penyusup, disebut dengan:",
-        options: [
-            "Monitoring or Logging",
-            "Keystroke Logger",
-            "Alerting Mechanism",
-            "Network Devices Hardware"
+        "question": "Setiap Informasi Elektronik yang dibuat, diteruskan, dikirimkan, diterima, atau disimpan dalam bentuk analog, digital, elektromagnetik, optikal, atau sejenisnya, yang dapat dilihat, ditampilkan, dan/atau didengar melalui Komputer atau Sistem Elektronik, disebut:",
+        "options": [
+            "Dokumen elektronik",
+            "Sistem elektronik",
+            "Informasi elektronik",
+            "Transaksi elektronik"
         ],
-        answer: 1
+        "answer": 0
     },
-    // 8. Indikasi Malware (Lampu)
     {
-        question: "Di bawah ini yang tidak termasuk beberapa indikasi telah terinstall malware pada komputer yaitu:",
-        options: [
-            "Lampu komputer terus menyala",
-            "Pengaturan browser berubah, termasuk default web saat awal browser dibuka",
-            "Browser homepage terus berubah",
-            "Iklan pop-up muncul setelah browser ditutup"
+        "question": "Ekstraksi seluruh informasi pada media penyimpanan sebagai bahan pengembangan sistem maupun barang bukti digital, disebut:",
+        "options": [
+            "Network forensik",
+            "Mobile forensik",
+            "Malware forensik",
+            "Disk forensik"
         ],
-        answer: 0
+        "answer": 3
     },
-    // 9. Karakteristik Honeypot (Deceptive)
     {
-        question: "Karakteristik honeypot yang berperilaku dan terlihat seperti sistem yang normal yaitu:",
-        options: [
-            "Decoy System",
-            "Deceptive",
-            "Closely Monitored",
-            "Security Vulnerabilites"
+        "question": "Pendekatan keamanan sistem Jaringan komputer dengan mendeteksi percobaan illegal masuk ke jaringan komputer menggunakan audit file log, disebut dengan:",
+        "options": [
+            "Intrusion detection",
+            "Security investigation",
+            "Avoidance",
+            "Cryptography"
         ],
-        answer: 1
+        "answer": 0
     },
-    // 10. Jenis Malware (Backdoor)
     {
-        question: "Jenis malware yang mampu mengacaukan lalu lintas jaringan, melakukan brute force untuk mengcrack password dan enkripsi, dan mendistribusikan serangan distributed denial of service (DDoS) yaitu:",
-        options: [
+        "question": "Sertifikasi di bawah ini yang wajib dimiliki oleh ahli komputer forensik, KECUALI:",
+        "options": [
+            "Computer Forensics External Certification (CCE)",
+            "ITIL dan TOGAF",
+            "EnCase Certified Examiner Program (EnCE)",
+            "GCFA – GIAC Certified Forensics Analyst"
+        ],
+        "answer": 1
+    },
+
+    // ==================================================================
+    // BAGIAN 2: MALWARE & KEAMANAN (Ransomware, Spyware, dll)
+    // ==================================================================
+    {
+        "question": "Jenis malware yang diklasifikasikan sebagai Cybercrime, di mana fungsinya adalah mengenkripsi data korban dan menuntut tebusan untuk mengembalikan akses data tersebut, adalah:",
+        "options": [
+            "Serangan DDoS",
+            "Botnet",
+            "Ransomware",
+            "Phishing"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Perangkat lunak berbahaya yang secara spesifik dirancang untuk mengumpulkan dan mengirimkan informasi rahasia (seperti nomor kartu kredit, PIN perbankan, dan password) tentang pengguna komputer tanpa diketahui oleh si pengguna, disebut:",
+        "options": [
+            "Worm",
+            "Keylogger",
+            "Spyware",
+            "Virus"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Jenis Malware yang memiliki karakteristik berbeda dengan worm, yaitu ia menggandakan diri secara terus menerus di dalam sebuah komputer lokal dan hasil penggandaannya akan menggerogoti sistem serta memperlambat kinerja komputer, adalah:",
+        "options": [
+            "Trojan Horse",
+            "Worm",
+            "Wabbit",
+            "Backdoor"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Jenis Malware yang mampu mengacaukan lalu lintas jaringan, melakukan brute force untuk mengcrack password dan enkripsi, dan mendistribusikan serangan distributed denial of service (DDoS) yaitu:",
+        "options": [
             "Backdoor",
             "Spyware",
             "Trojan Horse",
             "Wabbit"
         ],
-        answer: 0
+        "answer": 0
     },
-    // 11. Proses isolation pada mobile forensik (Kecuali - Versi PDF)
     {
-        question: "Proses isolasi merupakan tahapan krusial dalam Mobile Forensik. Tindakan-tindakan berikut ini merupakan bagian dari tujuan proses isolasi, KECUALI:",
-        options: [
+        "question": "Berikut ini adalah faktor-faktor yang dapat disimpulkan sebagai indikasi bahwa telah ter-install malware pada komputer, KECUALI:",
+        "options": [
+            "Browser homepage terus berubah",
+            "Menggunakan sistem Autentikasi Dua Faktor atau Multifaktor",
+            "File upload atau download terjadi tanpa izin pengguna",
+            "Muncul ikon aneh pada desktop"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Salah satu poin penting dalam ‘Memahami resiko’ dalam tujuan analisis Malware adalah terkait:",
+        "options": [
+            "Teknik penyebaran",
+            "Manipulasi informasi",
+            "Tanda tangan digital",
+            "Metode Pengendalian"
+        ],
+        "answer": 1
+    },
+
+    // ==================================================================
+    // BAGIAN 3: HONEYPOT (Klasifikasi & Tujuan)
+    // ==================================================================
+    {
+        "question": "Tujuan utama dari Production Honeypot adalah untuk:",
+        "options": [
+            "Mendapatkan informasi mengenai aktivitas – aktivitas dari komunitas penyerang",
+            "Membantu mengurangi resiko keamanan jaringan pada sebuah organisasi",
+            "Mendapatkan akses root tanpa batasan",
+            "Melakukan riset akademis tentang taktik hacker"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Dalam klasifikasi Honeypot, Research Honeypot memiliki tujuan spesifik, yaitu digunakan sebagai alat untuk:",
+        "options": [
+            "Mendapatkan akses root tanpa batasan",
+            "Membantu mengurangi resiko keamanan jaringan pada sebuah organisasi",
+            "Menjamin keberlangsungan bisnis",
+            "Meneliti ancaman keamanan yang mungkin dihadapi dan cara melindungi diri"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Klasifikasi Honeypot yang ditandai dengan kehadiran sistem operasi di dalamnya di mana penyerang dapat berinteraksi secara langsung dan tidak ada batasan (chroot/jail) sehingga penyerang dapat memiliki akses root, adalah:",
+        "options": [
+            "Decoy System Honeypot",
+            "Low – Interaction Honeypot",
+            "Medium – Interaction Honeypot",
+            "High – Interaction Honeypot"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Karakteristik Honeypot yang mengharuskannya untuk berperilaku dan terlihat seperti sistem yang normal, yang berfungsi untuk mengelabui black-hat (penyusup) adalah:",
+        "options": [
+            "Closely Monitored",
+            "Security Vulnerabilites",
+            "Decoy System",
+            "Deceptive"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Fungsi Keystroke Logger di dalam Honeypot adalah untuk memberikan informasi tentang:",
+        "options": [
+            "Apa saja yang dilakukan oleh penyusup termasuk ketikan dari papan keybord penyusup",
+            "Perangkat jaringan komputer yang dibutuhkan untuk mendirikan Honeypot",
+            "Dukungan Public Key Infrastructure",
+            "Bagaimana file-file dan data yang tersimpan di dalamnya diatur"
+        ],
+        "answer": 0
+    },
+
+    // ==================================================================
+    // BAGIAN 4: PERALATAN & TEKNIS FORENSIK (Write Blocker, Faraday, dll)
+    // ==================================================================
+    {
+        "question": "Perangkat keras khusus yang digunakan dalam Forensik Disk bersamaan dengan perangkat lunak pencitraan disk (disk imaging) dengan tujuan untuk menjamin bahwa salinan bukti yang dihasilkan adalah identik (dalam hal konten) dan media asli tidak terubah selama proses akuisisi adalah:",
+        "options": [
+            "Network Devices Hardware",
+            "Keystroke Logger",
+            "Write Blocker",
+            "Perangkat Masukan Biometrik"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Dalam Proses Mobile Forensik, tahapan Isolation merupakan proses yang sangat penting agar perangkat mobile tidak terhubung dengan jaringan komunikasi. Tujuan utama dari proses ini adalah untuk:",
+        "options": [
+            "Membuat image hard disk dan menyimpan barang bukti di tempat aman",
+            "Mengekstrak data bagi investigator untuk di review",
             "Mencegah penambahan data baru ke telepon melalui panggilan masuk dan pesan teks",
-            "Mencegah penambahan data baru yang masuk karena adanya sinyal internet",
-            "Menjaga akses yang terlarang dari jarak jauh",
-            "Melakukan unpack barang bukti sesuai metodologi dan membuat image hard disk"
+            "Melakukan unpack sesuai metodologi dan melakukan uji visual"
         ],
-        answer: 3
+        "answer": 2
     },
-    // 12. Keuntungan E-Commerce (Kecuali)
     {
-        question: "Berikut ini adalah keuntungan-keuntungan yang ditawarkan oleh E-Commerce bagi bisnis, KECUALI:",
-        options: [
-            "Menurunkan biaya operasi (operating cost)",
-            "Meningkatkan market exposure",
-            "Meningkatkan value chain",
-            "Memperpanjang waktu product-cycle sehingga memperlambat inovasi"
+        "question": "Bukti digital yang dikategorikan Volatile (mudah hilang) sering kali diekstrak menggunakan kerangka forensik memori, karena bukti ini berada di lokasi yang tidak stabil. Salah satu sumber bukti yang diekstrak menggunakan Volatility adalah artefak digital dari:",
+        "options": [
+            "File image pada hard disk",
+            "Pembuangan memori yang tidak stabil (RAM)",
+            "Media penyimpanan yang aman",
+            "File yang berada pada unallocated space"
         ],
-        answer: 3
+        "answer": 1
     },
-    // 13. Kemampuan Disk Forensic (Yang Bukan)
     {
-        question: "Kemampuan yang dapat dilakukan oleh Disk Forensik meliputi hal-hal berikut, YANG BUKAN adalah:",
-        options: [
-            "Menganalisa access file",
-            "Me-recover file-file yang terhapus",
-            "Menganalisa dan memanfaatkan system logs",
-            "Memastikan kualifikasi ahli dan peralatan"
-        ],
-        answer: 3
-    },
-    // 14. Bidang Keilmuan Forensik (Kecuali)
-    {
-        question: "Berikut adalah bidang keilmuan forensik tradisional (ilmu alam) dan BUKAN komputer forensik:",
-        options: [
-            "Forensik pathologi",
-            "Forensik dentistry",
-            "Forensik toxicology",
-            "Komputer forensik"
-        ],
-        answer: 3
-    },
-    // 15. Jenis peralatan pada pemodelan forensik (Kecuali)
-    {
-        question: "Peralatan yang dibutuhkan guna mendapatkan bukti-bukti yang dapat dipercaya meliputi klasifikasi berikut, KECUALI:",
-        options: [
-            "Perangkat keras",
-            "Perangkat lunak",
-            "Media penyimpanan",
-            "Perangkat Write Blocker"
-        ],
-        answer: 3
-    },
-    // 16. Asas pemanfaatan TI (Kecuali)
-    {
-        question: "Berikut ini adalah asas-asas pemanfaatan TI menurut UU ITE, KECUALI:",
-        options: [
-            "Asas kepastian hukum",
-            "Asas hati-hati",
-            "Asas netral teknologi",
-            "Asas Subjective territoriality"
-        ],
-        answer: 3
-    },
-    // 17. Tahap pengujian / Examination (Kecuali)
-    {
-        question: "Tahap Pengujian meliputi aktivitas berikut, KECUALI:",
-        options: [
-            "Bypassing fitur-fitur sistem",
-            "Filtrasi (eliminasi data)",
-            "Mengalokasi dan mengekstrak file",
-            "Menentukan barang bukti yang harus diamankan seperti notes"
-        ],
-        answer: 3
-    },
-    // 18. Karakteristik ahli forensik (Kecuali)
-    {
-        question: "Kriteria yang harus dimiliki seorang ahli forensik meliputi hal-hal berikut, KECUALI:",
-        options: [
-            "Pengetahuan komputer dan hukum",
-            "Obyektif dan tidak bias",
-            "Penguasaan modifikasi data",
-            "Selalu menggunakan penalaran kias (analogi) jika hukum tidak jelas"
-        ],
-        answer: 3
-    },
-    // 19. Pengertian dasar: Forensik
-    {
-        question: "Forensik didefinisikan sebagai suatu proses ilmiah yang bertujuan untuk:",
-        options: [
-            "Penerapan sederhana penyelidikan komputer",
-            "Mengidentifikasi bukti digital",
-            "Mengumpulkan, menganalisa, dan menghadirkan berbagai bukti dalam sidang pengadilan",
-            "Ilmu analisis barang bukti"
-        ],
-        answer: 2
-    },
-    // 20. Pengertian Komputer Forensik
-    {
-        question: "Menurut Moroni Parra (2002), Forensik Teknologi Informasi didefinisikan sebagai:",
-        options: [
-            "Pengujian sistem komputer",
-            "Pemeliharaan bukti komputer",
-            "Suatu proses mengidentifikasi, memelihara, menganalisa dan menggunakan bukti digital menurut hukum yang berlaku",
-            "Analisis sumber daya komputer"
-        ],
-        answer: 2
-    },
-    // 21. Tiga Komponen Digital Forensik
-    {
-        question: "Tiga komponen vital Digital Forensik adalah:",
-        options: [
-            "Evidence, Integrity, Admissibility",
-            "Identification, Collection, Reporting",
-            "Manusia (People), Peralatan (Equipment), Aturan (Protocol)",
-            "Hardware, Software, Firmware"
-        ],
-        answer: 2
-    },
-    // 22. Pengertian Informasi Elektronik
-    {
-        question: "Menurut UU ITE, satu atau sekumpulan data elektronik (tulisan, suara, gambar) yang memiliki arti disebut:",
-        options: [
-            "Dokumen Elektronik",
-            "Sistem Elektronik",
-            "Informasi Elektronik",
-            "Transaksi Elektronik"
-        ],
-        answer: 2
-    },
-    // 23. Pengertian Dokumen Elektronik
-    {
-        question: "Informasi Elektronik yang disimpan dalam bentuk digital yang dapat dilihat/ditampilkan melalui Komputer disebut:",
-        options: [
-            "Informasi Elektronik",
-            "Dokumen Elektronik",
-            "Sistem Elektronik",
-            "Jejak Digital"
-        ],
-        answer: 1
-    },
-    // 24. Pengertian Sistem Elektronik
-    {
-        question: "Serangkaian perangkat dan prosedur elektronik yang berfungsi mempersiapkan, mengumpulkan, dan mengolah Informasi Elektronik disebut:",
-        options: [
-            "Hardware",
-            "Software",
-            "Sistem Elektronik",
-            "Jaringan Komputer"
-        ],
-        answer: 2
-    },
-    // 25. Pengertian Transaksi Elektronik
-    {
-        question: "Perbuatan hukum yang dilakukan oleh para pihak dalam konteks elektronik disebut:",
-        options: [
-            "Transaksi Elektronik",
-            "Kontrak Elektronik",
-            "Perdagangan Elektronik",
-            "Komunikasi Data"
-        ],
-        answer: 0
-    },
-    // 26. Pengertian Handheld Device
-    {
-        question: "Perangkat bergerak dalam Mobile Forensik didefinisikan sebagai:",
-        options: [
-            "Perangkat komputer tradisional",
-            "Perangkat penyimpan informasi sensitif",
-            "Satu-satunya perangkat yang dapat dimiliki oleh tersangka setiap saat berdasarkan ukurannya, dan merupakan perangkat boot siklus langsung",
-            "Perangkat sistem komputer non-komputer"
-        ],
-        answer: 2
-    },
-    // 27. Spesifikasi Komputer Forensik: Forensik Disk
-    {
-        question: "Spesialisasi forensik pembuatan salinan bukti identik menggunakan write blocker adalah:",
-        options: [
+        "question": "Spesifikasi Komputer Forensik yang berkaitan dengan pengamatan dan analisis lalu lintas jaringan komputer, baik lokal maupun WAN/internet, untuk keperluan pengumpulan bukti atau deteksi intrusi adalah:",
+        "options": [
             "Forensik File System",
-            "Forensik Jaringan",
-            "Forensik Disk",
+            "Forensik Internet",
+            "Forensik Jaringan Komputer",
             "Forensik Basis Data"
         ],
-        answer: 2
+        "answer": 2
     },
-    // 28. Penjelasan Open Computer Systems
     {
-        question: "Perangkat kategori Open Computer Systems memiliki ciri khas:",
-        options: [
-            "Sistem telepon tradisional",
-            "Ponsel dan smart card",
-            "Sensor mobil",
-            "Sistem yang memiliki media penyimpanan, keyboard, monitor (laptop, desktop, server)"
+        "question": "Untuk menjaga keutuhan data dan mempertahankannya dalam hukum, penyelidik forensik diwajibkan memulai dokumentasi Chain of Custody. Hal-hal yang harus dicatat dalam dokumentasi ini mencakup data-data berikut, KECUALI:",
+        "options": [
+            "Di mana, kapan, dan siapa yang menemukan evidence",
+            "Siapa yang melakukan pemeriksaan terhadap evidence",
+            "Catatan mengenai Peripheral Memory dan cache",
+            "Waktu dan jam penanganan evidence"
         ],
-        answer: 3
+        "answer": 2
     },
-    // 29. Hukum Formal
     {
-        question: "Hukum yang memuat peraturan tentang cara mengajukan perkara ke Pengadilan (Hukum Acara) adalah:",
-        options: [
-            "Hukum Privat",
-            "Hukum Publik",
-            "Hukum Material",
-            "Hukum Formal"
+        "question": "Model forensik melibatkan tiga komponen utama. Yang BUKAN merupakan jenis peralatan dalam pemodelan forensik adalah:",
+        "options": [
+            "Perangkat lunak",
+            "Perangkat keras",
+            "Brainware",
+            "Media penyimpanan"
         ],
-        answer: 3
+        "answer": 2
     },
-    // 30. Pengertian Hukum Publik
     {
-        question: "Hukum yang mengatur hubungan antara Negara dengan warga negara disebut:",
-        options: [
+        "question": "Tiga komponen fundamental yang menjadi landasan praktik pengumpulan, analisis, dan pelaporan data digital dalam Forensik Digital adalah:",
+        "options": [
+            "Sistem komputer, Jaringan komputer, dan Jalur komunikasi",
+            "Manusia (People), Peralatan (Equipment), dan Aturan (Protocol)",
+            "Perangkat Keras, Perangkat Lunak, dan Media Penyimpanan",
+            "Intake, Isolation, dan Processing"
+        ],
+        "answer": 1
+    },
+
+    // ==================================================================
+    // BAGIAN 5: MOBILE FORENSIK (Tahapan & Definisi)
+    // ==================================================================
+    {
+        "question": "Proses yang membedakan antara computer forensics dan mobile phone forensics, di mana perangkat mobile tidak terhubung dengan jaringan komunikasi, adalah proses:",
+        "options": [
+            "Processing",
+            "Preparation",
+            "Intake",
+            "Isolation"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Tahap awal dalam proses Mobile Forensik di mana barang bukti diperoleh oleh “Pemeriksa” dan terdapat formulir atau dokumentasi pendukung lainnya terkait dengan kepemilikan barang bukti, disebut:",
+        "options": [
+            "Preparation",
+            "Identification",
+            "Intake",
+            "Processing"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Urutan tahapan yang benar setelah Preparation dalam Proses Mobile Forensik berdasarkan diagram alir adalah:",
+        "options": [
+            "Isolation, Processing, Verification, Documentation/Reporting",
+            "Identification, Isolation, Processing, Verification",
+            "Verification, Documentation/Reporting, Presentation, Archiving",
+            "Intake, Identification, Isolation, Processing"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Pada tahap Processing dalam Mobile Forensik, kegiatan utamanya adalah:",
+        "options": [
+            "Melakukan ekstraksi dari barang bukti dengan metode yang sudah ditentukan",
+            "Membuat image hard disk",
+            "Melakukan verification data",
+            "Melakukan snapshot lingkungan"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Pengertian dari Handheld forensik adalah:",
+        "options": [
+            "Ilmu atau keahlian dalam proses dan mengelola barang bukti digital yang berasal dari mobile devices",
+            "Pemeriksaan perangkat keras dan perangkat lunak untuk membuktikan sebuah tuduhan",
+            "Upaya untuk menjaga informasi dari ancaman",
+            "Penerapan penyelidikan komputer untuk menentukan bukti hukum"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Handhled device adalah satu-satunya perangkat yang memiliki karakteristik unik, di antaranya adalah:",
+        "options": [
+            "Dapat merekam ke mana saja perangkat tersebut berjalan",
+            "Memiliki akses langsung ke perangkat satu sama lain karena mereka adalah perangkat boot siklus langsung",
+            "Memiliki kemampuan low – interaction",
+            "Dapat memiliki akses root tanpa batasan"
+        ],
+        "answer": 1
+    },
+
+    // ==================================================================
+    // BAGIAN 6: HUKUM, ASAS & PIHAK TERKAIT
+    // ==================================================================
+    {
+        "question": "Pihak yang memiliki peran dalam proses pembuktian di pengadilan untuk meyakinkan hakim berdasarkan alat bukti yang ada, agar menyatakan seorang terdakwa bersalah sesuai dengan surat atau catatan dakwaan, adalah:",
+        "options": [
+            "Hakim",
+            "Penasihat Hukum / Terdakwa",
+            "Jaksa Penuntut Umum",
+            "Computer Investigator"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Salah satu peran utama yang diemban oleh Computer Forensic Examiner dalam Pemodelan Forensik adalah:",
+        "options": [
+            "Membuat dasar untuk membuat keputusan berdasarkan alat-alat bukti",
+            "Sebagai first responder yang mendapatkan bukti",
+            "Melakukan pengujian terhadap media original dan mengekstrak data bagi investigator",
+            "Melakukan pengawasan aktif terhadap risiko Bank"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Tujuan utama Pembuktian bagi Hakim adalah:",
+        "options": [
+            "Melakukan penyelidikan secara menyeluruh",
+            "Menjamin adanya kepastian hukum",
+            "Membuat dasar untuk membuat keputusan berdasarkan alat-alat bukti yang ada dalam persidangan",
+            "Mengajukan alat-alat bukti yang menguntungkan terdakwa"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Sumber hukum utama yang secara spesifik mengatur mengenai kejahatan TI (Tindak Pidana di Bidang Teknologi Informasi) di Indonesia adalah:",
+        "options": [
+            "Kitab Undang-Undang Hukum Pidana (KUHP)",
+            "Undang-Undang Hukum Acara Pidana (KUHAP)",
+            "Undang-Undang Hak Cipta",
+            "UU Informasi dan Transaksi Elektronik No. 11 Tahun 2008"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Asas berlakunya hukum pidana menurut tempat (Pasal 2 – 9 KUHP) yang menyatakan UU Hukum Pidana Indonesia berlaku terhadap setiap orang yang melakukan pelanggaran atau kejahatan di dalam wilayah RI adalah:",
+        "options": [
+            "Asas Nasional Aktif",
+            "Asas Teritorial",
+            "Asas Nasional Pasif",
+            "Asas Universal"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Asas yang menentukan bahwa UU Hukum Pidana Indonesia berlaku juga bagi warga negara Indonesia yang berada di luar negeri adalah:",
+        "options": [
+            "Asas Universal",
+            "Asas Nasional Aktif",
+            "Asas Teritorial",
+            "Asas Netral Teknologi"
+        ],
+        "answer": 1
+    },
+    {
+        "question": "Asas berlakunya hukum pidana yang menekankan yurisdiksi berdasarkan kepentingan hukum suatu negara yang dilanggar (misal: pemalsuan uang) meskipun dilakukan oleh WNI maupun WNA di luar RI adalah:",
+        "options": [
+            "Asas Nasional Pasif",
+            "Asas Subjective territoriality",
+            "Asas Protective principle",
+            "Asas Objective territoriality"
+        ],
+        "answer": 0
+    },
+    {
+        "question": "Dalam penentuan hukum yang berlaku pada tiap negara, Asas Universal memperoleh perhatian khusus. Asas ini menentukan bahwa setiap negara berhak menghukum pelaku kejahatan yang bersifat merugikan keselamatan internasional, yang mencakup kejahatan terhadap:",
+        "options": [
+            "Kepentingan hukum suatu negara",
+            "Kewarganegaraan pelaku",
+            "Kemanusiaan",
+            "Tempat di mana perbuatan dilakukan"
+        ],
+        "answer": 2
+    },
+    {
+        "question": "Forensik TI dikategorikan sebagai bagian dari Hukum Formal (Hukum Acara Pidana) karena memuat tentang:",
+        "options": [
+            "Aturan tentang tingkah laku masyarakat",
+            "Peraturan berupa perintah dan larangan",
+            "Hubungan antara Negara dengan perseorangan",
+            "Cara-cara/prosedur pembuktian terjadinya suatu pelanggaran di bidang TI agar dapat diajukan ke Pengadilan"
+        ],
+        "answer": 3
+    },
+    {
+        "question": "Hukum yang mengatur hubungan antara Negara dengan warga negara atau perseorangan disebut:",
+        "options": [
             "Hukum Privat",
             "Hukum Publik (Hukum Negara)",
             "Hukum Material",
             "Hukum Formal"
         ],
-        answer: 1
+        "answer": 1
     },
-    // 31. Asas Nasional Pasif
+
+    // ==================================================================
+    // BAGIAN 7: DEFINISI & LAINNYA
+    // ==================================================================
     {
-        question: "Asas yang menyatakan UU Pidana berlaku bagi siapa saja di luar RI yang melanggar kepentingan hukum negara (misal: pemalsuan uang) adalah:",
-        options: [
-            "Asas Teritorial",
-            "Asas Nasional Aktif",
-            "Asas Nasional Pasif",
-            "Asas Universal"
+        "question": "Suatu proses ilmiah dalam mengumpulkan, menganalisa, dan menghadirkan berbagai bukti dalam sidang pengadilan terkait adanya suatu kasus hukum, disebut:",
+        "options": [
+            "Forensik Digital",
+            "Sistem Elektronik",
+            "Forensik",
+            "Hukum Formal"
         ],
-        answer: 2
+        "answer": 2
     },
-    // 32. Asas Universal
     {
-        question: "Asas yang memberlakukan UU Pidana terhadap perbuatan jahat yang merugikan keselamatan internasional adalah:",
-        options: [
-            "Asas Teritorial",
-            "Asas Nasional Aktif",
-            "Asas Nasional Pasif",
-            "Asas Universal"
+        "question": "Satu atau sekumpulan data elektronik, termasuk tulisan, suara, gambar, peta, rancangan, surat elektronik, atau sejenisnya, yang telah diolah dan memiliki arti atau dapat dipahami oleh orang yang mampu memahaminya, disebut:",
+        "options": [
+            "Dokumen Elektronik",
+            "Sistem Elektronik",
+            "Informasi Elektronik",
+            "Tanda Tangan Elektronik"
         ],
-        answer: 3
+        "answer": 2
     },
-    // 33. Alat bukti sah (KUHAP)
     {
-        question: "Menurut Pasal 184 KUHAP, alat bukti yang sah adalah sebagai berikut, KECUALI:",
-        options: [
-            "Keterangan saksi",
-            "Keterangan terdakwa",
-            "Informasi Elektronik atau Dokumen Elektronik",
-            "Surat dan petunjuk"
+        "question": "Informasi yang tersimpan atau terdistribusikan dalam komputer atau dalam bentuk digital yang bisa dijadikan sebagai bukti dalam persidangan, disebut:",
+        "options": [
+            "Data Digital",
+            "Bukti Digital (Digital Evidence)",
+            "Metadata",
+            "Informasi Rahasia Internal"
         ],
-        answer: 2
+        "answer": 1
     },
-    // 34. Pihak Pengambil Keputusan
     {
-        question: "Pihak yang membuat keputusan berdasarkan pembuktian adalah:",
-        options: [
-            "Penuntut Umum",
-            "Penasehat Hukum",
-            "Hakim",
-            "Ahli Forensik"
+        "question": "Informasi yang disimpan dalam bentuk analog yang dapat dilihat atau ditampilkan secara langsung tanpa perantara perangkat elektronik disebut:",
+        "options": [
+            "Digital Evidence",
+            "Physical Evidence",
+            "Electronic Evidence",
+            "Virtual Evidence"
         ],
-        answer: 2
+        "answer": 1
     },
-    // 35. Urutan tahapan forensik
     {
-        question: "Tahapan proses Komputer Forensik yang benar adalah:",
-        options: [
-            "Persiapan, Snapshot, Analisa, Laporan",
-            "Analisa, Pengujian, Pengumpulan, Laporan",
-            "Pengumpulan, Pengujian, Analisa, Laporan",
-            "Identifikasi, Isolasi, Pemrosesan, Verifikasi"
-        ],
-        answer: 2
-    },
-    // 36. Cara memahami risiko malware
-    {
-        question: "Pemahaman risiko malware dicapai dengan mengidentifikasi:",
-        options: [
-            "Teknik penyebaran",
-            "Perubahan pada komputer",
-            "Sistem yang terkena dampak dan manipulasi informasi",
-            "Tanda tangan digital"
-        ],
-        answer: 2
-    },
-    // 37. Tahapan transport
-    {
-        question: "Tahap Transport dalam penanganan insiden mencakup:",
-        options: [
-            "Uji visual",
-            "Image hard disk",
-            "Uji otentikasi data",
-            "Mengemas aman, memfoto, dan mendokumentasikan penanganan barang bukti"
-        ],
-        answer: 3
-    },
-    // 38. Tahap awal mobile forensik (Intake - Definisi Lengkap)
-    {
-        question: "Tahap awal Mobile Forensik di mana barang bukti diperoleh oleh Pemeriksa dan didokumentasikan adalah:",
-        options: [
-            "Identification",
-            "Preparation",
-            "Processing",
-            "Intake"
-        ],
-        answer: 3
-    },
-    // 39. Urutan Tahapan proses mobile forensik
-    {
-        question: "Urutan tahapan Mobile Forensik setelah tahap Isolation adalah:",
-        options: [
-            "Identification, Preparation, Isolation",
-            "Processing, Verification, Documentation/Reporting",
-            "Verification, Presentation, Archiving",
-            "Processing, Preparation, Archiving"
-        ],
-        answer: 1
-    },
-    // 40. Software tools forensik (Volatility)
-    {
-        question: "Perangkat lunak kerangka forensik memori untuk mengekstrak artefak dari RAM adalah:",
-        options: [
-            "ProDiscover Forensic",
-            "EnCase Forensic",
-            "Oxygen Forensic Suite",
-            "Volatility"
-        ],
-        answer: 3
-    },
-    // 41. Indikasi komputer terinstall malware (Kecuali - Versi PDF)
-    {
-        question: "Indikasi umum keberadaan malware, KECUALI:",
-        options: [
-            "Iklan pop-up muncul",
-            "Browser homepage berubah",
-            "Lampu komputer berkedip tak wajar",
-            "Integrasi penyimpanan yang semakin berkurang karena File System Jaringan"
-        ],
-        answer: 3
-    },
-    // 42. Klasifikasi Honeypot (Low-Interaction)
-    {
-        question: "Honeypot yang hanya mengemulasikan layanan dan membatasi koneksi penyerang ke beberapa port adalah:",
-        options: [
-            "High-Interaction Honeypot",
-            "Medium-Interaction Honeypot",
-            "Low-Interaction Honeypot",
-            "Research Honeypot"
-        ],
-        answer: 2
-    },
-    // 43. Transaksi internet banking
-    {
-        question: "Jenis layanan Bank dengan risiko paling tinggi dan wajib manajemen risiko adalah:",
-        options: [
-            "Informational Internet Banking",
-            "Communicative Internet Banking",
-            "Transactional Internet Banking",
-            "Standard Internet Banking"
-        ],
-        answer: 2
-    },
-    // 44. Perbuatan yang dilarang (UU ITE)
-    {
-        question: "Perbuatan dilarang terkait Informasi Elektronik adalah:",
-        options: [
-            "Melanggar kesusilaan",
-            "Berita bohong",
-            "Melakukan tindakan yang berakibat terganggunya Sistem Elektronik",
-            "Mengakses Komputer orang lain"
-        ],
-        answer: 2
-    },
-    // 45. Hukum Pembuktian Forensik TI
-    {
-        question: "Forensik TI dikategorikan sebagai Hukum Acara Pidana karena memuat prosedur pembuktian, sehingga diklasifikasikan sebagai:",
-        options: [
-            "Hukum Material",
-            "Hukum Publik",
-            "Hukum Formal",
-            "Hukum Privat"
-        ],
-        answer: 2
-    },
-    // 46. Metadata
-    {
-        question: "Informasi terstruktur yang mendeskripsikan informasi lain (data tentang data) adalah:",
-        options: [
+        "question": "Informasi terstruktur yang mendeskripsikan informasi lain (data tentang data) disebut:",
+        "options": [
             "File System",
             "Unallocated Space",
             "Metadata",
             "Slack Space"
         ],
-        answer: 2
+        "answer": 2
     },
-    // 47. Analisa Barang Bukti Level Fisik
     {
-        question: "Analisa untuk melihat cluster dan sektor tertentu guna mencari informasi dilakukan pada level:",
-        options: [
-            "Level Forensik",
-            "Level Logik",
-            "Level Jaringan",
-            "Level Fisik"
+        "question": "Sistem yang memiliki media penyimpanan, keyboard, monitor, dan pernak-pernik yang biasanya ada di dalam komputer, termasuk laptop, desktop, dan server, dikategorikan sebagai sumber bukti digital:",
+        "options": [
+            "Embedded Computer Systems",
+            "File System Jaringan",
+            "Communication Systems",
+            "Open Computer Systems"
         ],
-        answer: 3
+        "answer": 3
     },
-    // 48. Asas Teritorial
     {
-        question: "Asas yang menetapkan UU Pidana berlaku bagi setiap orang yang melakukan kejahatan di dalam wilayah RI adalah:",
-        options: [
-            "Asas Nasional Aktif",
-            "Asas Nasional Pasif",
-            "Asas Teritorial",
-            "Asas Universal"
+        "question": "Surat Edaran Bank Indonesia Nomor 6/18/DPNP hanya diberlakukan bagi penyelenggaraan Transactional Internet Banking. Hal ini dikarenakan aktivitas tersebut memiliki risiko paling tinggi karena melibatkan:",
+        "options": [
+            "Pelayanan jasa Bank kepada nasabah dalam bentuk informasi saja",
+            "Interaksi dengan Bank penyedia layanan dan melakukan eksekusi transaksi",
+            "Komunikasi terbatas tanpa eksekusi transaksi",
+            "Penggunaan infrastruktur kunci publik"
         ],
-        answer: 2
+        "answer": 1
     },
-    // 49. Asas Nasional Aktif
     {
-        question: "Asas yang menetapkan UU Pidana berlaku bagi WNI yang berada di luar negeri adalah:",
-        options: [
-            "Asas Teritorial",
-            "Asas Nasional Aktif",
-            "Asas Nasional Pasif",
-            "Asas Universal"
+        "question": "Berikut ini adalah keuntungan yang didapat dari E-Commerce, KECUALI:",
+        "options": [
+            "Meningkatkan market exposure",
+            "Menurunkan biaya operasi",
+            "Meningkatkan customer loyality",
+            "Menetapkan prosedur untuk pengujian identitas nasabah"
         ],
-        answer: 1
+        "answer": 3
     },
-    // 50. Anti-Malware (Konteks)
     {
-        question: "Fungsi utama perlindungan terhadap ancaman malware adalah:",
-        options: [
-            "Analisis data sumber daya komputer",
-            "Analisis lalu lintas jaringan",
-            "Menjaga informasi dari ancaman untuk menjamin keberlangsungan bisnis",
-            "Dokumentasi bukti komputer"
+        "question": "Dalam jenis insiden menurut manajemen keamanan informasi, insiden di mana pengguna dapat mencoba mentransfer file tanpa otoritas atau menggunakan mekanisme akses antar-domain untuk mengakses file, dikategorikan sebagai:",
+        "options": [
+            "Malicious Code Attack",
+            "Unauthorized Use of Service",
+            "Korupsi informasi",
+            "Unauthorized access"
         ],
-        answer: 2
+        "answer": 1
     },
-    // 51. Insiden Mencoba (Attempted Incident)
+    
+    // ==================================================================
+    // BAGIAN 8: TAHAPAN FORENSIK UMUM
+    // ==================================================================
     {
-        question: "Jika ancaman terdeteksi namun belum menyebabkan kerusakan penuh, langkah pencegahannya adalah:",
-        options: [
-            "Freezing the Scene",
-            "Keystroke Logger",
-            "Strategi pencegahan (shutdown drop-zones, tanda tangan digital)",
-            "Integritas media"
+        "question": "Urutan tahapan Komputer Forensik yang benar berdasarkan model proses yang diberikan adalah:",
+        "options": [
+            "Pengujian, Pengumpulan, Analisa, Laporan",
+            "Pengumpulan, Analisa, Pengujian, Laporan",
+            "Pengumpulan, Pengujian, Analisa, Laporan",
+            "Identifikasi, Pengujian, Analisa, Presentasi"
         ],
-        answer: 2
+        "answer": 2
     },
-    // 52. Jejak Digital
     {
-        question: "Informasi yang menunjukkan aktivitas pengguna dan sah jadi bukti (jejak digital) adalah:",
-        options: [
-            "Slack space",
-            "Write blocker",
-            "Cookies, history bookmarks, log files, dan berkas dokumen",
-            "Peralatan fisik"
+        "question": "Tahapan Transport dalam pemrosesan barang bukti mencakup aktivitas:",
+        "options": [
+            "Membuat image hard disk",
+            "Melakukan pengemasan secara aman, serta memfoto dan mendokumentasikan penanganan barang bukti",
+            "Mendokumentasikan konfigurasi hardware",
+            "Melakukan unpack sesuai metodologi"
         ],
-        answer: 2
+        "answer": 1
     },
-    // 53. Tahap Awal Mobile Forensik (BARU - Menggantikan Duplikat)
     {
-        question: "Dalam metodologi Mobile Forensik, tahapan yang bertanggung jawab di mana barang bukti diperoleh oleh Pemeriksa dan pengumpulan formulir atau dokumentasi pendukung terkait kepemilikan barang bukti dan data informasi pendukung kasus dimulai, adalah:",
-        options: [
-            "Identification, karena pemeriksaan perangkat dimulai dengan identifikasi pabrikan dan model",
-            "Processing, karena di sinilah ekstraksi data dilakukan",
-            "Intake, karena ini adalah tahap awal perolehan barang bukti dan dokumentasi pendukung",
-            "Preparation, karena harus menentukan metode dan tools yang akan digunakan"
+        "question": "Tahap Pengujian (Examination) dalam Komputer Forensik melibatkan hal-hal berikut, KECUALI:",
+        "options": [
+            "Filtrasi (eliminasi data)",
+            "Bypassing fitur sistem",
+            "Mengekstrak file",
+            "Mengidentifikasi user di luar pengguna dan menentukan bagaimana komponen terelasi"
         ],
-        answer: 2
+        "answer": 3
     },
-    // 54. Aktivitas Penyusup yang Terekam Honeypot (BARU - Menggantikan Duplikat)
     {
-        question: "Fungsi spesifik dalam Honeypot yang dirancang untuk merekam dan menyediakan informasi mendetail kepada administrator tentang urutan penekanan tombol (keystrokes) yang dilakukan oleh penyusup (intruder) di dalam sistem Honeypot adalah:",
-        options: [
-            "Network Devices Hardware, karena ini adalah perangkat fisik jaringan",
-            "Monitoring or Logging, karena ini adalah pengamatan aktivitas umum",
-            "Keystroke Logger, karena memberikan informasi ketikan dari papan keyboard penyusup",
-            "Packet Analyzer, karena hanya memberikan informasi tentang packet data yang diberikan penyusup"
+        "question": "Berikut ini adalah kemampuan-kemampuan yang dimiliki oleh Disk Forensik, KECUALI:",
+        "options": [
+            "Me-recover file-file yang terhapus",
+            "Mendapatkan password dan kunci cryptographic",
+            "Menganalisa akses file",
+            "Berkaitan dengan pengamatan dan analisis lalu lintas jaringan komputer"
         ],
-        answer: 2
+        "answer": 3
     },
-    // 55. Karakteristik Honeypot: Deceptive (BARU - Menggantikan Duplikat)
     {
-        question: "Karakteristik Honeypot yang paling penting dalam menjebak black-hat (penyusup) adalah kemampuan untuk berperilaku dan terlihat seperti sistem yang normal, sehingga menipu penyerang agar merasa aman. Karakteristik ini dikenal sebagai:",
-        options: [
-            "Decoy System, yang bertindak sebagai sistem yang menawarkan layanan melalui internet",
-            "Closely Monitored, yang berfokus pada pengamatan ketat oleh ahli",
-            "Security Vulnerabilities, yang berfokus pada pemunculan kerentanan",
-            "Deceptive, yang berfokus pada perilaku dan tampilan seperti sistem yang normal"
+        "question": "Untuk menjamin bahwa pengujian harus mempertahankan integritas media asli, Verification (Verifikasi) data yang diekstrak dalam Mobile Forensik dapat dilakukan dengan cara:",
+        "options": [
+            "Mengidentifikasi user di luar pengguna",
+            "Menggunakan hash value untuk membandingkan hasil ekstraksi",
+            "Meng-exclude file dan mengalokasi file",
+            "Melakukan troubleshooting"
         ],
-        answer: 3
-    },
-    // 56. Jenis Malware Pengacak Lintas Jaringan (BARU - Menggantikan Duplikat)
-    {
-        question: "Dalam klasifikasi Malware berdasarkan fungsinya, jenis Malware yang secara khusus disebutkan memiliki kapabilitas untuk mengacaukan lalu lintas jaringan, menjalankan brute force untuk memecahkan password dan enkripsi, serta mendistribusikan serangan Distributed Denial of Service (DDoS) adalah:",
-        options: [
-            "Worm, karena ia menggandakan diri melalui jaringan tetapi tidak membutuhkan sarang",
-            "Keylogger, karena fungsi utamanya adalah menyimpan catatan aktivitas pengetikan",
-            "Trojan Horse, karena berfungsi sebagai mata-mata (spy) untuk memata-matai aktivitas komputer",
-            "Backdoor, karena mampu mengacaukan lalu lintas jaringan, melakukan brute force dan mendistribusikan serangan DDoS"
-        ],
-        answer: 3
-    },
-	// 57. Sumber Rukun Kejahatan TI / Perbuatan yang dilarang (UU ITE)
-	{
-	    question: "Perbuatan yang dilarang dalam Undang-Undang Informasi dan Transaksi Elektronik (UU ITE) menjadi sumber rukun kejahatan TI. Salah satu perbuatan terlarang tersebut adalah mengakses Komputer atau Sistem Elektronik milik Orang lain. Perbuatan ini dikategorikan dalam aktivitas yang dilarang, termasuk:",
-	    options: [
-	        "Melakukan intersepsi atau penyadapan, serta menyebarkan berita bohong yang merugikan konsumen",
-	        "Mengakses Komputer atau Sistem Elektronik milik Orang lain dengan cara apapun",
-	        "Melakukan tindakan apa pun yang berakibat terganggunya Sistem Elektronik atau merusak situs Internet",
-	        "Mendistribusikan atau mentransmisikan Informasi Elektronik yang memiliki muatan melanggar hak cipta"
-	    ],
-	    answer: 1
-	}
+        "answer": 1
+    }
 ];
 		        // ===== BANK SOAL ESSAY (5 SOAL) =====
         const essayQuestions = [
@@ -1749,7 +1733,7 @@ const pgQuestions = [
             let value = parseInt(element.textContent);
             
             if (id === 'pgCount') {
-                value = Math.max(5, Math.min(57, value + delta));
+                value = Math.max(5, Math.min(75, value + delta));
             } else if (id === 'essayCount') {
                 value = Math.max(0, Math.min(5, value + delta));
             }
