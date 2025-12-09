@@ -824,7 +824,7 @@
         <div class="settings-header">
             <div class="logo-icon">🎯</div>
             <h1>Prediksi UTS Forensik TI</h1>
-            <p>56 Soal PG + 5 Essay</p>
+            <p>57 Soal PG + 5 Essay</p>
         </div>
 
         <div class="settings-card">
@@ -832,7 +832,7 @@
             <div class="setting-item">
                 <div class="setting-label">
                     Jumlah Soal PG
-                    <span>Maksimal 56 soal</span>
+                    <span>Maksimal 57 soal</span>
                 </div>
                 <div class="number-input">
                     <button onclick="adjustNumber('pgCount', -5)">−</button>
@@ -881,7 +881,7 @@
             <h3>📊 Bank Soal Tersedia</h3>
             <div class="stats-preview">
                 <div class="stat-box">
-                    <div class="number">56</div>
+                    <div class="number">57</div>
                     <div class="label">Soal PG</div>
                 </div>
                 <div class="stat-box">
@@ -961,7 +961,7 @@
     </div>
 	
     <script>
-      // ===== BANK SOAL PILIHAN GANDA (56 SOAL - SUDAH DIBERSIHKAN) =====
+      // ===== BANK SOAL PILIHAN GANDA (57 SOAL - SUDAH DIBERSIHKAN) =====
 const pgQuestions = [
     // 1. Definisi Processing (Mobile Forensik)
     {
@@ -1579,6 +1579,17 @@ const pgQuestions = [
         ],
         answer: 3
     }
+	// 57. Sumber Rukun Kejahatan TI / Perbuatan yang dilarang (UU ITE)
+	{
+	    question: "Perbuatan yang dilarang dalam Undang-Undang Informasi dan Transaksi Elektronik (UU ITE) menjadi sumber rukun kejahatan TI. Salah satu perbuatan terlarang tersebut adalah mengakses Komputer atau Sistem Elektronik milik Orang lain. Perbuatan ini dikategorikan dalam aktivitas yang dilarang, termasuk:",
+	    options: [
+	        "Melakukan intersepsi atau penyadapan, serta menyebarkan berita bohong yang merugikan konsumen",
+	        "Mengakses Komputer atau Sistem Elektronik milik Orang lain dengan cara apapun",
+	        "Melakukan tindakan apa pun yang berakibat terganggunya Sistem Elektronik atau merusak situs Internet",
+	        "Mendistribusikan atau mentransmisikan Informasi Elektronik yang memiliki muatan melanggar hak cipta"
+	    ],
+	    answer: 1
+	}
 ];
 		        // ===== BANK SOAL ESSAY (5 SOAL) =====
         const essayQuestions = [
@@ -1738,7 +1749,7 @@ const pgQuestions = [
             let value = parseInt(element.textContent);
             
             if (id === 'pgCount') {
-                value = Math.max(5, Math.min(56, value + delta));
+                value = Math.max(5, Math.min(57, value + delta));
             } else if (id === 'essayCount') {
                 value = Math.max(0, Math.min(5, value + delta));
             }
